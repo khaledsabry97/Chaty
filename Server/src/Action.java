@@ -1,39 +1,21 @@
 import org.json.JSONObject;
+import org.json.JSONString;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class Action implements Runnable {
-    InputStream inputStream;
-    Action(InputStream inputStream)
+    String msg;
+    Action(String inputStream)
     {
-        this.inputStream = inputStream;
+        this.msg = inputStream;
     }
 
     @Override
     public void run() {
-        try {
-            JSONObject jsonObject = convertToJson(inputStream);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-    }
+        JSONObject json = new JSONObject(msg);
+        System.out.println(json.getString("method"));
 
-
-    JSONObject convertToJson(InputStream dataInputStream) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(dataInputStream));
-        String line = "";
-        StringBuilder responseStrBuilder = new StringBuilder();
-        while ((line = bufferedReader.readLine()) != null) {
-
-            responseStrBuilder.append(line);
-        }
-        dataInputStream.close();
-        JSONObject result = new JSONObject(responseStrBuilder.toString());
-        return result;
     }
 
 
