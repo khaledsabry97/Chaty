@@ -12,6 +12,8 @@ import android.text.format.Formatter;
 
 import com.example.socketserver.MainActivity;
 
+import org.json.JSONObject;
+
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
@@ -19,11 +21,11 @@ import java.util.Calendar;
 import java.util.Date;
 
 @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
-public class Sender extends AsyncTask<String, Void, Void> {
+public class Sender extends AsyncTask<JSONObject, Void, Void> {
 
     Socket socket;
     String getIp() {
-        Context context = MainActivity.mainActivity.getApplicationContext();
+        Context context = MainActivity.getActivity().getApplicationContext();
 
         if (context != null) {
 
@@ -44,8 +46,8 @@ public class Sender extends AsyncTask<String, Void, Void> {
     }
 
     @Override
-    protected Void doInBackground(String... strings) {
-        String strin = "thread "+ strings[0];
+    protected Void doInBackground(JSONObject... jsonObjects) {
+        String msg = jsonObjects[0].toString();
         try
         {
             //String ip = getIp();
@@ -53,12 +55,11 @@ public class Sender extends AsyncTask<String, Void, Void> {
 
 
 
-            Date date = new Date(Calendar.DATE);
-            date.getTime();
-            String string = "{\"id\":1,\"method\":\""+date.getTime()+"\",\"params\":[\"subscriber\"]}";
+            //Date date = new Date(Calendar.DATE);
+            //date.getTime();
 
             DataOutputStream DOS = new DataOutputStream(socket.getOutputStream());
-            DOS.writeUTF(string);
+            DOS.writeUTF(msg);
             socket.close();
 
 
