@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Torrenta</string>
+    <string name="email_address">khaledsab1997@gmail.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="banner_ad_unit_id">ca-app-pub-9364776584437772/5011845578</string>
+    <string name="tv">Tv</string>
+    <string name="title">Title</string>
+    <string name="download">D</string>
+    <string name="size">Size</string>
+    <string name="seaders">S</string>
+    <string name="leechers">L</string>
+    <string name="resolution">Resolution</string>
+    <string name="quality">Quality</string>
+    <string name="encoder">Encoder</string>
+    <string name="codec">codec</string>
+    <string name="features">Features</string>
+    <string name="season">Season</string>
+    <string name="episode">Episode</string>
+    <string name="general">General</string>
+    <string name="movies">Movies</string>
+    <string name="tv_series">Tv Series</string>
+    <string name="games">Games</string>
+    <string name="software">Software</string>
+    <string name="downloads">Downloads</string>
+    <string name="about_me">About Me</string>
+    <string name="sort">Sort</string>
+    <string name="history">History</string>
+    <string name="apps">Apps</string>
+    <string name="no_torrent_found">No Torrent Found</string>
+    <string name="write_something">What the torrents you want ?!</string>
+    <string name="music">Music</string>
+
+</resources>
