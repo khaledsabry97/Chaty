@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:viewportWidth="319"
+    android:viewportHeight="319" android:width="319dp" android:height="319dp">
+    <group android:name="_x33_4-Coffee_mug">
+        <path android:fillColor="#FF000000"
+            android:pathData="M225.241 55.327h-24.912l3.341-11.563l70.706-18.421L267.773 0l-85.126 22.177l-9.58 33.15H51.075 c-3.328 0-6.026 2.698-6.026 6.026V96.91c0 3.328 2.698 6.026 6.026 6.026h7.917l0.613 5.981 c45.172 17.998 66.922 33.365 87.967 48.24c16.707 11.811 32.717 23.119 60.509 35.896l9.242-90.118h7.918 c3.328 0 6.026-2.698 6.026-6.026V61.354C231.267 58.025 228.569 55.327 225.241 55.327z" />
+        <path android:fillColor="#FF000000"
+            android:pathData="M62.642 138.512l4.719 46.021c39.981 16.658 60.405 31.086 80.211 45.086c15.233 10.77 29.887 21.121 53.42 32.549 l4.275-41.686c-35.182-15.336-54.268-28.826-72.812-41.936C113.963 165.477 96.335 153.02 62.642 138.512z" />
+        <path android:fillColor="#FF000000"
+            android:pathData="M70.425 214.412l10.771 105.012h113.922l3.04-29.65c-30.726-14.041-48.447-26.568-65.704-38.77 C115.441 238.982 99.165 227.477 70.425 214.412z" />
+    </group>
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+</vector>

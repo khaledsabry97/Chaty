@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:viewportWidth="289"
+    android:viewportHeight="289" android:width="289dp" android:height="289dp">
+    <group android:name="_x30_3-Director_chair">
+        <path android:fillColor="#FF000000"
+            android:pathData="M25.431 152.695h34.498c2.762 0 5-2.24 5-5v-17.811c53.238-6.898 106.107-6.898 159.346 0v17.811c0 2.76 2.238 5 5 5 h34.498c2.762 0 5-2.24 5-5V5c0-2.762-2.238-5-5-5h-34.498c-2.762 0-5 2.238-5 5v17.811c-53.238 6.898-106.108 6.899-159.346 0V5 c0-2.762-2.238-5-5-5H25.431c-2.762 0-5 2.238-5 5v142.695C20.431 150.455 22.669 152.695 25.431 152.695z" />
+        <path android:fillColor="#FF000000"
+            android:pathData="M14.821 172.512v36h24.743l73.608 43.536l-62.82 37.155h62.858l31.391-18.566l31.391 18.566h62.858l-62.82-37.155 l73.608-43.536h24.743v-36H14.821z M144.602 233.458l-42.179-24.947h84.357L144.602 233.458z" />
+    </group>
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+</vector>

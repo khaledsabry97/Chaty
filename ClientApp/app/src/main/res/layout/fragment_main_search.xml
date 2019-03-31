@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_main_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SearchFragment">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:background="@drawable/toolbar_color"
+                    android:theme="@style/ToolbarTheme"
+                    app:titleTextAppearance="@style/TextCategory"
+                    android:fitsSystemWindows="true"
+                    app:title="Torrenta"></android.support.v7.widget.Toolbar>
+
+                <FrameLayout
+                    android:id="@+id/torrent_search_items_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/toolbar"
+                    android:layout_weight="1">
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/navigation_view_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:itemTextColor="@color/white"
+                android:layout_gravity="end">
+
+                <include
+                    android:id="@+id/movie_id"
+                    layout="@layout/view_torrent_movie_options"
+                    android:visibility="gone"></include>
+
+                <include
+                    android:id="@+id/tv_id"
+                    layout="@layout/view_torrent_tv_options"
+                    android:visibility="gone"></include>
+
+                <include
+                    android:id="@+id/general_id"
+                    layout="@layout/view_torrent_general_options"
+                    android:visibility="gone"></include>
+            </android.support.design.widget.NavigationView>
+        </android.support.v4.widget.DrawerLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

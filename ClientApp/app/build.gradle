@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 26
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+
+        applicationId "com.example.khaledsabry.Client"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.android.support:design:27.1.1'
+    //for webapi services
+    implementation 'org.jsoup:jsoup:1.10.1'
+
+    //for http requests
+    implementation 'com.android.volley:volley:1.1.0'
+    //material spinner
+    implementation 'com.jaredrummler:material-spinner:1.2.5'
+
+    //changing dp for custom resolution
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+
+    //for animations
+    // implementation 'com.android.support:support-compat:27.1.1'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    //
+
+
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+
+
+    implementation 'com.github.rubensousa:floatingtoolbar:1.5.1'
+//customized toast
+    implementation 'com.github.GrenderG:Toasty:1.3.0'
+
+    implementation 'cn.hugeterry.coordinatortablayout:coordinatortablayout:1.2.2'
+
+    implementation 'com.github.jrvansuita:MaterialAbout:+'
+
+//progress bar
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+
+    implementation 'com.byox.drawview:drawview:1.3.1'
+    implementation 'com.byox.drawview:drawview:1.0.0-SNAPSHOT'
+    implementation 'com.android.support:support-annotations:28.0.0'
+
+
+}
+
+//apply plugin: 'com.google.gms.google-services'
+

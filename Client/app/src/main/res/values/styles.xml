@@ -23,7 +23,7 @@
         <item name="android:textSize">@dimen/size_main_category</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:background">@drawable/round</item>
+        <item name="android:background">@drawable/ic_launcher_background</item>
 
 
     </style>
@@ -60,7 +60,7 @@
         <item name="android:textSize">@dimen/size_normal_text</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:background">@drawable/round</item>
+        <item name="android:background">@drawable/ic_launcher_background</item>
 
 
     </style>
@@ -73,7 +73,7 @@
         <item name="android:textSize">@dimen/size_normal_text</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:background">@drawable/round</item>
+        <item name="android:background">@drawable/ic_launcher_background</item>
 
 
     </style>

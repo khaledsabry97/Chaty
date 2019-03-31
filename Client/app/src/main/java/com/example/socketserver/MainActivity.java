@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         mainActivity = this;
     }
 
-    public MainFragment mainFragment = MainFragment.newInstance();
+    //public MainFragment mainFragment = MainFragment.newInstance();
 
     //reference to the main activity
     public static MainActivity getActivity() {
@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null)
-            loadFragmentWithReturn(R.id.main_container, mainFragment);
+            //loadFragmentWithReturn(R.id.main_container, mainFragment);
+            loadFragmentWithReturn(R.id.main_container,new DrawingFragment());
 
     }
 

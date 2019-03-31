@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:viewportWidth="336"
+    android:viewportHeight="336" android:width="336dp" android:height="336dp">
+    <group android:name="_x30_7-Loud_speaker">
+        <path android:fillColor="#FF000000"
+            android:pathData="M0.476 280.636c-0.756 1.691-0.604 3.648 0.404 5.201c1.008 1.555 2.732 2.49 4.584 2.49h62.789 c2.154 0 4.109-1.266 4.988-3.234l30.004-64.979H28.491L0.476 280.636z" />
+        <path android:fillColor="#FF000000"
+            android:pathData="M293.589 48.913c-0.885-0.687-1.965-1.048-3.063-1.048c-0.416 0-0.836 0.052-1.248 0.158 c-0.482 0.124-48.836 12.677-96.553 32.563c-29.673 12.367-52.711 24.826-69.078 37.307H23.421c-3.018 0-5.464 2.446-5.464 5.463 v79.834c0 3.018 2.446 5.463 5.464 5.463H123.65c16.366 12.48 39.404 24.939 69.075 37.304 c47.717 19.887 96.07 32.439 96.553 32.564c0.412 0.105 0.832 0.158 1.248 0.158c1.098 0 2.178-0.361 3.063-1.049 c1.223-0.947 1.938-2.406 1.938-3.951V52.865C295.526 51.319 294.812 49.859 293.589 48.913z" />
+        <path android:fillColor="#FF000000"
+            android:pathData="M309.151 118.535v98.66c16.256-10.4 27.041-28.6 27.041-49.33C336.192 147.134 325.407 128.935 309.151 118.535z" />
+    </group>
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+    <group />
+</vector>

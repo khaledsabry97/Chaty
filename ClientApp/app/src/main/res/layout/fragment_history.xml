@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HistoryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/title_id"
+            layout="@layout/view_main_title"></include>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_id"
+            android:background="@drawable/history_toolbar_options"
+            app:tabSelectedTextColor="@color/red"
+            app:tabTextAppearance="@style/TextCategory"
+            app:tabTextColor="@color/cardview_light_background">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/movies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movies" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/games" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/software_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apps" />
+        </android.support.design.widget.TabLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tab_layout_id"
+            android:background="@color/background_main"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
