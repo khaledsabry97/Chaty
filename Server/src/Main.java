@@ -7,6 +7,9 @@ public class Main {
         Thread recieverThread = new Thread(new RecieveThread());
         senderThread.start();
         recieverThread.start();
+        DatabaseConnection databaseConnection = new DatabaseConnection();
+        //databaseConnection.send();
+        databaseConnection.Post_JSON();
 
     }
 }
