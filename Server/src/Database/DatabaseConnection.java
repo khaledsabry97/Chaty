@@ -1,3 +1,6 @@
+package Database;
+
+import Interfaces.OnDatabaseReceived;
 import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -13,19 +16,25 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class DatabaseConnection {
+    String urlFile;
+    Map<String,Object> params;
 
 
+    DatabaseConnection(String urlFile, Map<String,Object> params)
+    {
+        this.urlFile = urlFile;
+        this.params = params;
+    }
 
-    public void Post_JSON() {
 
-        try {
-            URL url = new URL("http://localhost/explainity/insert_connection.php"); // URL to your application
-            Map<String,Object> params = new LinkedHashMap<>();
-            //params.put("room_name", "khaled"); // All parameters, also easy
-            params.put("room_id", 4);
-            params.put("nick_name", "ahmed");
-            params.put("ip", "192.168.0.0");
-            params.put("last_time_entered",System.currentTimeMillis() );
+    public JSONObject execute()
+    {
+        String urlString = "http://localhost/explainity/"+urlFile+".php";
+
+        JSONObject myResponse = null;
+        try{
+            URL url = new URL(urlString); // URL to your application
+
 
 
 
@@ -58,7 +67,7 @@ public class DatabaseConnection {
             result = IOUtils.toString(in, "UTF-8");
             System.out.println(result);
             System.out.println("result after Reading JSON Response");
-            JSONObject myResponse = new JSONObject(result);
+            myResponse = new JSONObject(result);
             JSONArray jsonArray = myResponse.getJSONArray("server_response");
             System.out.println("id- "+myResponse.getInt("id"));
             System.out.println("result- "+myResponse.getString("result"));
@@ -67,6 +76,8 @@ public class DatabaseConnection {
         } catch (Exception e) {
             System.out.println(e);
         }
+
+        return myResponse;
     }
 
 

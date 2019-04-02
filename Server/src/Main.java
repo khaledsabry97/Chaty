@@ -1,3 +1,6 @@
+import Database.DatabaseConnection;
+import Database.DatabaseQuery;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -7,9 +10,8 @@ public class Main {
         Thread recieverThread = new Thread(new RecieveThread());
         senderThread.start();
         recieverThread.start();
-        DatabaseConnection databaseConnection = new DatabaseConnection();
-        //databaseConnection.send();
-        databaseConnection.Post_JSON();
+        DatabaseQuery databaseQuery = new DatabaseQuery();
+        databaseQuery.getRoomId("khaled");
 
     }
 }
