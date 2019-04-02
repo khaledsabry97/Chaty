@@ -11,7 +11,7 @@ public class Main {
         senderThread.start();
         recieverThread.start();
         DatabaseQuery databaseQuery = new DatabaseQuery();
-        databaseQuery.getRoomId("khaled");
+        databaseQuery.getAllIpInRoom(1);
 
     }
 }
