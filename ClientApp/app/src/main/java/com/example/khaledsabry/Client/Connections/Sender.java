@@ -45,7 +45,7 @@ public class Sender implements Runnable {
         }
         catch (Exception e)
         {
-
+e.printStackTrace();
         }
     }
 }

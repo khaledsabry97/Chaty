@@ -23,7 +23,7 @@ public class MsgDecoder implements Runnable {
         this.recieverIp = recieverIp.substring(1,recieverIp.length());
         databaseQuery = new DatabaseQuery();
         databaseResultDecoder = new DatabaseResultDecoder();
-        msgEncoder = new MsgEncoder(recieverIp);
+        msgEncoder = new MsgEncoder(this.recieverIp);
     }
 
     @Override
@@ -42,11 +42,11 @@ public class MsgDecoder implements Runnable {
 
     private void decoding(String func) {
 
-        if(func == "create_room")
+        if(func.equals("create_room"))
         {
             createRoom();
         }
-        else if(func == "join_room")
+        else if(func.equals("join_room"))
         {
             joinRoom();
 
@@ -92,7 +92,7 @@ public class MsgDecoder implements Runnable {
             }
             else
             {
-                int roomId = jsonArray.getJSONObject(0).getInt("room_id");
+                int roomId = jsonArray.getJSONObject(0).getInt("id");
                 Boolean result2 = databaseResultDecoder.getInUpDl(databaseQuery.joinRoom(roomId,nickName,ip));
                 if(result2 == true)
                 {
@@ -133,7 +133,7 @@ public class MsgDecoder implements Runnable {
         }
         else
         {
-            int roomId = jsonArray.getJSONObject(0).getInt("room_id");
+            int roomId = jsonArray.getJSONObject(0).getInt("id");
             Boolean result = databaseResultDecoder.getInUpDl(databaseQuery.joinRoom(roomId,nickName,ip));
             if(result == true)
             {

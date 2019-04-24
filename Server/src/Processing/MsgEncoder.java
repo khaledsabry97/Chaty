@@ -45,7 +45,7 @@ public class MsgEncoder {
     {
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("func","room_created_before");
-        jsonObject.addProperty("msg","room has been created before change room name");
+        jsonObject.addProperty("msg","room has been created before change room name/password");
 
 
         send(jsonObject);
@@ -74,8 +74,8 @@ public class MsgEncoder {
     public void roomJoinNotFound()
     {
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("func","room_join_unsuccess");
-        jsonObject.addProperty("msg","incorrect room name/password");
+        jsonObject.addProperty("func","room_join_not_found");
+        jsonObject.addProperty("msg","Incorrect room name/password");
 
 
         send(jsonObject);

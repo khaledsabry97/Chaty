@@ -14,7 +14,8 @@ public class MsgEncoder {
     private void send(JsonObject jsonObject)
     {
         sender.putJson(jsonObject.toString());
-        sender.run();
+
+        new Thread(sender).start();
     }
 
 
@@ -27,22 +28,26 @@ public class MsgEncoder {
         send(jsonObject);
     }
 
-    public void roomCreatedUnSuccessfully()
+    public void createRoom(String roomName,String roomPassword,String nickName)
     {
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("func","room_not_created");
-        jsonObject.addProperty("msg","there is an unexpected results");
+        jsonObject.addProperty("func","create_room");
+        jsonObject.addProperty("room_name",roomName);
+        jsonObject.addProperty("room_password",roomPassword);
+        jsonObject.addProperty("nick_name",nickName);
+
 
 
         send(jsonObject);
     }
 
-    public void roomCreatedFound()
+    public void joinRoom(String roomName,String roomPassword,String nickName)
     {
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("func","room_created_before");
-        jsonObject.addProperty("msg","room has been created before change room name");
-
+        jsonObject.addProperty("func","join_room");
+        jsonObject.addProperty("room_name",roomName);
+        jsonObject.addProperty("room_password",roomPassword);
+        jsonObject.addProperty("nick_name",nickName);
 
         send(jsonObject);
     }

@@ -12,20 +12,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file leaf-file-name="Sender.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Connections/Sender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+            <state relative-caret-position="254">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonPrimitive.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Computer/Downloads/gson-2.8.2.jar!/com/google/gson/JsonPrimitive.class">
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Data/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="228">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="843" selection-start-line="843" selection-end-line="843" />
+              <folding>
+                <element signature="e#17393#17394#0" expanded="true" />
+                <element signature="e#17459#17460#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseQuery.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Database/DatabaseQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="61" column="33" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,7 +61,7 @@
       <file leaf-file-name="JsonObject.class" pinned="false" current-in-tab="false">
         <entry file="jar://D:/Computer/Downloads/gson-2.8.2.jar!/com/google/gson/JsonObject.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="1045">
               <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="e#2235#2236#0" expanded="true" />
@@ -42,20 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedTreeMap.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Computer/Downloads/gson-2.8.2.jar!/com/google/gson/internal/LinkedTreeMap.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Reciever.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Connections/Reciever.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="173">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#307#308#0" expanded="true" />
@@ -65,30 +84,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/HashMap.java">
+      <file leaf-file-name="MsgDecoder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Processing/MsgDecoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="904" column="18" selection-start-line="904" selection-start-column="18" selection-end-line="904" selection-end-column="18" />
+            <state relative-caret-position="173">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
               <folding>
-                <element signature="e#24282#24283#0" expanded="true" />
-                <element signature="e#24347#24348#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#sendMessage#0;class#MsgDecoder#0" />
+                <element signature="method#deleteMessage#0;class#MsgDecoder#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MsgDecoder.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Processing/MsgDecoder.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="61" column="28" lean-forward="true" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#joinRoom#0;class#MsgDecoder#0" />
-                <element signature="method#sendMessage#0;class#MsgDecoder#0" />
-                <element signature="method#deleteMessage#0;class#MsgDecoder#0" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -97,31 +111,19 @@
         <entry file="file://$PROJECT_DIR$/src/Processing/ConnectedIps.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Data/Client.java">
+      <file leaf-file-name="MsgEncoder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Processing/MsgEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="173">
+              <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
               <folding>
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#739#740#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Set.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Set.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -148,15 +150,16 @@
         <option value="$PROJECT_DIR$/src/ActionController.java" />
         <option value="$PROJECT_DIR$/src/MsgEncoder.java" />
         <option value="$PROJECT_DIR$/src/MsgDecoder.java" />
-        <option value="$PROJECT_DIR$/src/Processing/MsgEncoder.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Connections/Sender.java" />
         <option value="$PROJECT_DIR$/src/Database/DatabaseQuery.java" />
-        <option value="$PROJECT_DIR$/src/Database/DatabaseConnection.java" />
-        <option value="$PROJECT_DIR$/src/Processing/ConnectedIps.java" />
-        <option value="$PROJECT_DIR$/src/Data/Client.java" />
         <option value="$PROJECT_DIR$/src/Connections/Reciever.java" />
+        <option value="$PROJECT_DIR$/src/Data/Client.java" />
+        <option value="$PROJECT_DIR$/src/Processing/ConnectedIps.java" />
+        <option value="$PROJECT_DIR$/src/Database/DatabaseConnection.java" />
+        <option value="$PROJECT_DIR$/src/Connections/Sender.java" />
+        <option value="$PROJECT_DIR$/src/Processing/MsgEncoder.java" />
         <option value="$PROJECT_DIR$/src/Processing/MsgDecoder.java" />
+        <option value="$PROJECT_DIR$/src/Data/Message.java" />
       </list>
     </option>
   </component>
@@ -170,9 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,6 +217,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,7 +295,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -307,12 +309,12 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23851204" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2439825" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40209424" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40209424" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -329,59 +331,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RecieveThread.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Action.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Database/DatabaseConnection.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Data/Client.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Processing/MsgDecoder.java</url>
-          <line>216</line>
+          <line>77</line>
           <properties />
-          <option name="timeStamp" value="31" />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Data/Client.java</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/src/Connections/Sender.java</url>
+          <line>32</line>
           <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Connections/Reciever.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Processing/MsgDecoder.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="34" />
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="((BufferedInputStream)in).buf" custom="java.io.BufferedInputStream" />
+        <watch expression="Client.getInstance().clients" language="JAVA" custom="Data.Client" />
       </configuration>
     </watches-manager>
   </component>
@@ -423,13 +390,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/OnDatabaseReceived.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/OnDatabaseReceived.java" />
     <entry file="file://$PROJECT_DIR$/src/Database/DatabaseQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -493,13 +454,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/OnDatabaseReceived.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/OnDatabaseReceived.java" />
     <entry file="file://$PROJECT_DIR$/src/Database/DatabaseQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -642,24 +597,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8683">
-          <caret line="501" column="11" selection-start-line="501" selection-start-column="11" selection-end-line="501" selection-end-column="11" />
-          <folding>
-            <element signature="e#17393#17394#0" expanded="true" />
-            <element signature="e#17459#17460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/OnDatabaseReceived.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/OnDatabaseReceived.java" />
     <entry file="file://$PROJECT_DIR$/src/Connections/Receiver.java" />
     <entry file="file://$PROJECT_DIR$/src/SenderThread.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -668,37 +606,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseResultDecoder.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="5985">
+          <caret line="389" column="30" selection-start-line="389" selection-start-column="30" selection-end-line="389" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="904" column="18" selection-start-line="904" selection-start-column="18" selection-end-line="904" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Computer/Downloads/gson-2.8.2.jar!/com/google/gson/JsonPrimitive.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseResultDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="114">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Computer/Downloads/gson-2.8.2.jar!/com/google/gson/internal/LinkedTreeMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Computer/Downloads/gson-2.8.2.jar!/com/google/gson/JsonObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="e#2235#2236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="61" column="33" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Processing/MsgEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
-          <caret line="96" column="45" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
+        <state relative-caret-position="173">
+          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/System.java">
+    <entry file="file://$PROJECT_DIR$/src/Processing/ConnectedIps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5985">
-          <caret line="389" column="30" selection-start-line="389" selection-start-column="30" selection-end-line="389" selection-end-column="30" />
+        <state relative-caret-position="247">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RecieveThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Connections/Reciever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="843" selection-start-line="843" selection-end-line="843" />
+          <folding>
+            <element signature="e#17393#17394#0" expanded="true" />
+            <element signature="e#17459#17460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Processing/MsgDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#sendMessage#0;class#MsgDecoder#0" />
+            <element signature="method#deleteMessage#0;class#MsgDecoder#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -714,137 +769,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecieveThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Connections/Sender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="49" />
+        <state relative-caret-position="254">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseQuery.java">
+    <entry file="file://$PROJECT_DIR$/src/Data/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="904" column="18" selection-start-line="904" selection-start-column="18" selection-end-line="904" selection-end-column="18" />
-          <folding>
-            <element signature="e#24282#24283#0" expanded="true" />
-            <element signature="e#24347#24348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Processing/ConnectedIps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connections/Reciever.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Computer/Downloads/gson-2.8.2.jar!/com/google/gson/internal/LinkedTreeMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Computer/Downloads/gson-2.8.2.jar!/com/google/gson/JsonObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-          <folding>
-            <element signature="e#2235#2236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Computer/Downloads/gson-2.8.2.jar!/com/google/gson/JsonPrimitive.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Processing/MsgDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="61" column="28" lean-forward="true" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#joinRoom#0;class#MsgDecoder#0" />
-            <element signature="method#sendMessage#0;class#MsgDecoder#0" />
-            <element signature="method#deleteMessage#0;class#MsgDecoder#0" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -865,7 +803,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

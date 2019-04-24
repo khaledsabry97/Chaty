@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.khaledsabry.Client.Controllers.SignInUpControlller;
 import com.example.khaledsabry.Client.Functions.Toasts;
 import com.example.khaledsabry.Client.R;
 
@@ -16,6 +17,8 @@ import com.example.khaledsabry.Client.R;
 public class CreateRoomFragment extends Fragment {
     EditText nickName,roomName,password;
     Button create,join;
+
+    SignInUpControlller signInUpControlller;
 
     public static CreateRoomFragment newInstance() {
         CreateRoomFragment fragment = new CreateRoomFragment();
@@ -26,6 +29,7 @@ public class CreateRoomFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
     }
 
@@ -54,6 +58,9 @@ public class CreateRoomFragment extends Fragment {
                 create();
             }
         });
+
+        signInUpControlller = SignInUpControlller.getInstance();
+        signInUpControlller.setCreateRoomFragment(this);
         return view;
     }
 
@@ -61,13 +68,17 @@ public class CreateRoomFragment extends Fragment {
     {
         if(!check())
             return;
-
+        signInUpControlller.joinRoom(roomName.getText().toString(),password.getText().toString(),nickName.getText().toString());
     }
 
     void create()
     {
         if(!check())
             return;
+
+        signInUpControlller.createRoom(roomName.getText().toString(),password.getText().toString(),nickName.getText().toString());
+
+
 
     }
 
@@ -80,6 +91,28 @@ public class CreateRoomFragment extends Fragment {
             return false;
         }
         return true;
+    }
+
+
+    public void created(int roomId)
+    {
+        //load chat fragment
+        Toasts.success("Room Created Successfully");
+    }
+
+    public void Joined(int roomId)
+    {
+        Toasts.success("you are joined to the room");
+    }
+
+    public void notCreated(String msg)
+    {
+        Toasts.error(msg);
+    }
+
+    public void notJoined(String msg)
+    {
+        Toasts.error(msg);
     }
 
 }

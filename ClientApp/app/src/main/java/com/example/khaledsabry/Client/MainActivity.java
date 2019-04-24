@@ -3,6 +3,7 @@ package com.example.khaledsabry.Client;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.khaledsabry.Client.Connections.Reciever;
 import com.example.khaledsabry.Client.Fragments.CreateRoomFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         UpdateConnection updateConnection = new UpdateConnection();
+        Reciever reciever = new Reciever(5000);
         new Thread(updateConnection).start();
+        reciever.execute();
 
         if (savedInstanceState == null)
             loadFragmentWithReturn(R.id.main_container, createRoomFragment);

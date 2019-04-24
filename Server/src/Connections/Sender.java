@@ -30,7 +30,7 @@ public class Sender implements Runnable {
     public void run() {
         try
         {
-            Socket socket = new Socket(ip, 5004);
+            Socket socket = new Socket(ip, 5000);
 
             ObjectOutputStream dos = new ObjectOutputStream(socket.getOutputStream());
             dos.writeObject(jsonFile);

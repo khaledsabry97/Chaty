@@ -1,6 +1,7 @@
 package com.example.khaledsabry.Client.Connections;
 
 
+import android.app.Activity;
 import android.os.AsyncTask;
 
 import com.example.khaledsabry.Client.Processing.MsgDecoder;
@@ -12,11 +13,10 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 
-public class Reciever extends AsyncTask<Void,JsonObject,JsonObject> {
+public class Reciever extends AsyncTask<Void, JsonObject, JsonObject> {
     int port;
 
-    public Reciever(int port)
-    {
+    public Reciever(int port) {
         this.port = port;
     }
 
@@ -31,30 +31,32 @@ public class Reciever extends AsyncTask<Void,JsonObject,JsonObject> {
                     Socket socket = serverSocket.accept();
                     ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
                     Gson gson = new Gson();
-                    JsonObject msg = gson.fromJson(String.valueOf(in.readObject()),JsonObject.class);
+                    JsonObject msg = gson.fromJson(String.valueOf(in.readObject()), JsonObject.class);
 
-                    MsgDecoder decoder = new MsgDecoder(msg);
-                    decoder.execute();
                     socket.close();
+                    publishProgress(msg);
 
-                }
-                catch (Exception e)
-                {
+
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
 
 
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        catch (Exception e)
-        {
-
-        }
-
-
-
 
 
         return null;
+    }
+
+    @Override
+    protected void onProgressUpdate(JsonObject... values) {
+        super.onProgressUpdate(values);
+        JsonObject jsonObject = values[0];
+        MsgDecoder decoder = new MsgDecoder(jsonObject);
+        decoder.run();
+
     }
 }

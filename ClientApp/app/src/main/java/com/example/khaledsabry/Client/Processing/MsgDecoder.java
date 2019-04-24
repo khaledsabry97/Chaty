@@ -1,13 +1,13 @@
 package com.example.khaledsabry.Client.Processing;
 
 
-import android.os.AsyncTask;
-
+import com.example.khaledsabry.Client.Controllers.SignInUpControlller;
 import com.google.gson.JsonObject;
 
-public class MsgDecoder extends AsyncTask<Void, Object, Object> {
+public class MsgDecoder implements Runnable {
     JsonObject jsonObject;
     MsgEncoder msgEncoder;
+    SignInUpControlller signInUpControlller = SignInUpControlller.getInstance();
 
     public MsgDecoder(JsonObject jsonObject) {
         this.jsonObject = jsonObject;
@@ -15,39 +15,64 @@ public class MsgDecoder extends AsyncTask<Void, Object, Object> {
     }
 
     @Override
-    protected Object doInBackground(Void... voids) {
-        try {
-            Object result = decoding(jsonObject.get("func").getAsString());
-            return result;
-        } catch (Exception e) {
-            //send there was error happened
-            e.printStackTrace();
-        }
-        return null;
+    public void run() {
+        decoding(jsonObject.get("func").getAsString());
     }
+
 
     private Object decoding(String func) {
 
-        if (func == "create_room") {
-        } else if (func == "join_room") {
-        } else if (func == "send_message") {
-        } else if (func == "delete_message") {
-        } else if (func == "update_time") {
-        } else if (func == "log_out") {
+        if (func.equals("room_created")) {
+            roomCreatedSuccessfully();
+        } else if (func.equals("room_not_created")) {
+            roomCreatedUnSuccessfully();
+        } else if (func.equals("room_created_before")) {
+            roomCreatedFound();
+        } else if (func.equals("room_joined")) {
+            roomJoinSuccess();
+        } else if (func.equals("room_join_unsuccess")) {
+            roomJoinUnSuccess();
+        } else if (func.equals("room_join_not_found")) {
+            roomJoinNotFound();
         }
+
         return null;
     }
 
 
-    void createRoom()
-    {
+    private void roomCreatedSuccessfully() {
+        Integer roomId = jsonObject.get("room_id").getAsInt();
+
+        signInUpControlller.roomCreatedSuccessfully(roomId);
+    }
+
+    private void roomCreatedUnSuccessfully() {
+        String msg = jsonObject.get("msg").getAsString();
+        signInUpControlller.roomCreatedUnSuccessfully(msg);
 
     }
 
-    @Override
-    protected void onProgressUpdate(Object... values) {
-        super.onProgressUpdate(values);
+    private void roomCreatedFound() {
+        String msg = jsonObject.get("msg").getAsString();
+        signInUpControlller.roomCreatedFound(msg);
+    }
 
+    private void roomJoinSuccess() {
+        Integer roomId = jsonObject.get("room_id").getAsInt();
+
+        signInUpControlller.roomJoinSuccess(roomId);
+    }
+
+    private void roomJoinUnSuccess() {
+        String msg = jsonObject.get("msg").getAsString();
+        signInUpControlller.roomJoinUnSuccess(msg);
+    }
+
+    private void roomJoinNotFound() {
+        String msg = jsonObject.get("msg").getAsString();
+        signInUpControlller.roomJoinNotFound(msg);
 
     }
+
+
 }

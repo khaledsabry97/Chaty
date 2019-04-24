@@ -72,9 +72,7 @@ public class DatabaseConnection {
             System.out.println(result);
             System.out.println("result after Reading JSON Response");
             myResponse = new JSONObject(result);
-            JSONArray jsonArray = myResponse.getJSONArray("server_response");
-            System.out.println("id- "+myResponse.getInt("id"));
-            System.out.println("result- "+myResponse.getString("result"));
+
             in.close();
             conn.disconnect();
         } catch (Exception e) {

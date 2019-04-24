@@ -40,7 +40,8 @@ public class Client {
         for(int i = 0 ;i < keys.length;i++)
         {
             Long time = clients.get(keys[i].toString());
-            if(System.currentTimeMillis() - time > 2000)
+            long diff = System.currentTimeMillis() - time;
+            if(diff > 10000)
                 clients.remove(keys[i].toString());
 
         }
