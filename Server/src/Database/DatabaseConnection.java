@@ -20,6 +20,11 @@ public class DatabaseConnection {
     Map<String,Object> params;
 
 
+    /**
+     * make a connection to make a query
+     * @param urlFile the php file to connect to
+     * @param params the parameters we pass
+     */
     DatabaseConnection(String urlFile, Map<String,Object> params)
     {
         this.urlFile = urlFile;

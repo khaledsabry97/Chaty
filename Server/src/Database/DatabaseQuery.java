@@ -15,9 +15,12 @@ public class DatabaseQuery {
     private final String get_all_ip_in_room = "select_all_connections_in_room";
 
 
-
-
-
+    /**
+     * create a new room when user make create new Room Request
+     * @param roomName the nickname of the room the user pass
+     * @param password the password that username has assigned
+     * @return if successfuly created return True if not return False
+     */
     public JSONObject createRoom(String roomName,String password)
     {
         Map<String,Object> params = new LinkedHashMap<>();
@@ -28,6 +31,13 @@ public class DatabaseQuery {
 
     }
 
+    /**
+     * when user enter room name and his nick name and enter the room request
+     * @param roomId get from function "getRoomId" the id of the room that user entered its name
+     * @param nickName the user nickname he entered
+     * @param ip the ip of the user
+     * @return if successfuly created return True if not return False
+     */
     public JSONObject joinRoom(int roomId, String nickName, String ip)
     {
         Map<String,Object> params = new LinkedHashMap<>();
@@ -40,15 +50,28 @@ public class DatabaseQuery {
 
     }
 
-
-    public JSONObject getRoomId(String roomName)
+    /**
+     * when  you enter the "join room request" you send the neme of the room
+     * @param roomName name of the room to get its id to use it later in the "joinRoom" function
+     * @return room id
+     */
+    public JSONObject getRoomId(String roomName,String roomPassword)
     {
         Map<String,Object> params = new LinkedHashMap<>();
         params.put("room_name", roomName);
+        params.put("room_password",roomPassword);
 
         return execute(get_room_id,params);
 
     }
+
+    /**
+     * update the time connection of the user
+     * @param roomId room id that user has signed in to
+     * @param nickName the nickname of the user
+     * @param ip the ip of the user
+     * @return if successfuly created return True if not return False
+     */
     public JSONObject updateConnectionTime(int roomId,String nickName,String
                                            ip)
     {
@@ -62,6 +85,11 @@ public class DatabaseQuery {
 
     }
 
+    /**
+     * select all the ips in the database to the room
+     * @param roomId put room id
+     * @return array of all ips
+     */
     public JSONObject getAllIpInRoom(int roomId)
     {
         Map<String,Object> params = new LinkedHashMap<>();

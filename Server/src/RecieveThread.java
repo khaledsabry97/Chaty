@@ -13,7 +13,7 @@ public class RecieveThread implements Runnable {
                 while (true) {
                     System.out.println("Running.......");
                     Socket socket = serverSocket.accept();
-                    System.out.println("Accept Message.......");
+                    System.out.println("Accept Data.Message.......");
                     DataInputStream in = new DataInputStream(socket.getInputStream());
                     System.out.println(socket.getInetAddress());
                     System.out.println(socket.getPort());
