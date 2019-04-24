@@ -1,8 +1,6 @@
 package Data;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Set;
 
 public class Client {
     private static Client ourInstance = new Client();
@@ -38,12 +36,12 @@ public class Client {
 
     public void deleteNotConencted()
     {
-        String[] keys = (String[]) clients.keySet().toArray();
+         Object[] keys =  clients.keySet().toArray();
         for(int i = 0 ;i < keys.length;i++)
         {
-            Long time = clients.get(keys[i]);
+            Long time = clients.get(keys[i].toString());
             if(System.currentTimeMillis() - time > 2000)
-                clients.remove(keys[i]);
+                clients.remove(keys[i].toString());
 
         }
     }

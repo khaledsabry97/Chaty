@@ -59,7 +59,7 @@ public class MsgDecoder implements Runnable {
         {
             deleteMessage();
         }
-        else if(func == "update_time")
+        else if(func.equals("update_connection"))
         {
             updateConnection();
         }

@@ -11,7 +11,7 @@ public class ConnectedIps implements Runnable {
             try
             {
                 client.deleteNotConencted();
-                Thread.sleep(5000);
+                Thread.sleep(10000);
             }
             catch (Exception e)
             {

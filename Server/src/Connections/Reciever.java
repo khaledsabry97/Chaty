@@ -24,9 +24,9 @@ public class Reciever implements Runnable {
             serverSocket = new ServerSocket(Integer.parseInt(port));
                 while (true) {
                     try {
-                        System.out.println("Running On Port"+port.toString()+".......");
+                        System.out.println("Running On Port "+port.toString()+".......");
                         Socket socket = serverSocket.accept();
-                        System.out.println("Accept Data.Message On Port"+port.toString()+".......");
+                        System.out.println("Accept Data.Message On Port "+port.toString()+".......");
                         ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
                         Gson gson = new Gson();
                         JsonObject msg = gson.fromJson(String.valueOf(in.readObject()),JsonObject.class);

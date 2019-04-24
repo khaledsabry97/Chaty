@@ -1,6 +1,5 @@
 package Database;
 
-import Interfaces.OnDatabaseReceived;
 import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;

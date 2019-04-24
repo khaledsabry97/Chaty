@@ -1,6 +1,8 @@
 package com.example.khaledsabry.Client;
 
 
+import com.example.khaledsabry.Client.Processing.MsgEncoder;
+
 public class UpdateConnection implements Runnable {
     //TODO run this class after you sign in
     @Override
@@ -8,9 +10,12 @@ public class UpdateConnection implements Runnable {
         while(true)
         {
             try {
-                wait(60000);
                 //TODO send an update for your connection
-            } catch (InterruptedException e) {
+                MsgEncoder msgEncoder = new MsgEncoder();
+                msgEncoder.updateConnection();
+                Thread.sleep(2000);
+
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }

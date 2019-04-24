@@ -1,7 +1,9 @@
-package Connections;
+package com.example.khaledsabry.Client.Connections;
 
 
 
+
+import com.example.khaledsabry.Client.Data.Server;
 
 import org.json.JSONObject;
 
@@ -12,12 +14,15 @@ import java.net.Socket;
 
 public class Sender implements Runnable {
 
-    String ip;
+    String port;
     String jsonFile;
+    Server server;
 
-    public Sender(String ip)
+    public Sender()
     {
-        this.ip = ip;
+        server = Server.getInstance();
+        this.port = String.valueOf(server.getServerPort());
+
     }
 
     public void putJson(String jsonFile)
@@ -30,8 +35,7 @@ public class Sender implements Runnable {
     public void run() {
         try
         {
-            Socket socket = new Socket(ip, 5004);
-
+            Socket socket = new Socket(server.getServerIp(), Integer.parseInt(port));
             ObjectOutputStream dos = new ObjectOutputStream(socket.getOutputStream());
             dos.writeObject(jsonFile);
             socket.close();

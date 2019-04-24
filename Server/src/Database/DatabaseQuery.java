@@ -1,6 +1,5 @@
 package Database;
 
-import Interfaces.OnDatabaseReceived;
 import org.json.JSONObject;
 
 import java.util.LinkedHashMap;

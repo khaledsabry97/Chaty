@@ -3,7 +3,7 @@ package com.example.khaledsabry.Client;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.khaledsabry.Client.Fragments.MainFragment;
+import com.example.khaledsabry.Client.Fragments.CreateRoomFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         mainActivity = this;
     }
 
-    public MainFragment mainFragment = MainFragment.newInstance();
+    public CreateRoomFragment createRoomFragment = CreateRoomFragment.newInstance();
 
     //reference to the main activity
     public static MainActivity getActivity() {
@@ -26,9 +26,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        UpdateConnection updateConnection = new UpdateConnection();
+        new Thread(updateConnection).start();
 
-if(savedInstanceState == null)
-        loadFragmentWithReturn(R.id.main_container, mainFragment);
+        if (savedInstanceState == null)
+            loadFragmentWithReturn(R.id.main_container, createRoomFragment);
 
     }
 
