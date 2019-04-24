@@ -9,6 +9,7 @@ import org.json.JSONObject;
 
 import javax.xml.crypto.Data;
 import Data.Message;
+import Data.Client;
 
 public class MsgDecoder implements Runnable {
     String recieverIp;
@@ -62,8 +63,13 @@ public class MsgDecoder implements Runnable {
         {
             updateConnection();
         }
+        else if(func == "log_out")
+        {
+            deleteConnection();
+        }
 
     }
+
 
 
 
@@ -208,7 +214,29 @@ public class MsgDecoder implements Runnable {
 
     private void updateConnection()
     {
-        Data.Client client = Data.Client.get
+        Client client = Client.getInstance();
+        client.updateConnection(recieverIp);
     }
 
+
+    private void deleteConnection() {
+
+        //delete connection from database
+        int roomId = jsonObject.get("room_id").getAsInt();
+        String nickName = jsonObject.get("nick_name").getAsString();
+        String ip = recieverIp;
+
+        Client client = Client.getInstance();
+        client.deleteConnection(ip);
+        Boolean result =databaseResultDecoder.getInUpDl(databaseQuery.deleteConnection(roomId,nickName));
+        if(result == true)
+        {
+            //successfully delete it there is no need to tell the user
+        }
+        else
+        {
+            //unsuccessfull deletion there is no need to tell the user
+        }
+
+    }
 }

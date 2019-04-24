@@ -31,6 +31,11 @@ public class Client {
         clients.put(ip, System.currentTimeMillis());
     }
 
+    public void deleteConnection(String ip)
+    {
+        clients.remove(ip);
+    }
+
     public void deleteNotConencted()
     {
         String[] keys = (String[]) clients.keySet().toArray();

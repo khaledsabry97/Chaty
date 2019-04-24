@@ -1,17 +1,21 @@
+import Connections.Reciever;
 import Database.DatabaseConnection;
 import Database.DatabaseQuery;
+import Processing.ConnectedIps;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Thread coonectedThread = new Thread(new ConnectedIps());
+        Thread recieverThread1 = new Thread(new Reciever(String.valueOf(10000)));
+        Thread recieverThread2 = new Thread(new Reciever(String.valueOf(10002)));
+        Thread recieverThread3 = new Thread(new Reciever(String.valueOf(10004)));
 
-        Thread senderThread = new Thread(new SenderThread());
-        Thread recieverThread = new Thread(new RecieveThread());
-        senderThread.start();
-        recieverThread.start();
-        DatabaseQuery databaseQuery = new DatabaseQuery();
-        databaseQuery.getAllIpInRoom(1);
+        recieverThread1.start();
+        recieverThread2.start();
+        recieverThread3.start();
+        coonectedThread.start();
+
 
     }
 }
