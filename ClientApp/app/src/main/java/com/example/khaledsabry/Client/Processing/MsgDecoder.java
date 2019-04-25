@@ -1,13 +1,18 @@
 package com.example.khaledsabry.Client.Processing;
 
 
+import com.example.khaledsabry.Client.Controllers.ChatController;
 import com.example.khaledsabry.Client.Controllers.SignInUpControlller;
+import com.example.khaledsabry.Client.Data.Message;
+import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
 public class MsgDecoder implements Runnable {
     JsonObject jsonObject;
     MsgEncoder msgEncoder;
+    Gson gson = new Gson();
     SignInUpControlller signInUpControlller = SignInUpControlller.getInstance();
+    ChatController chatController = ChatController.getInstance();
 
     public MsgDecoder(JsonObject jsonObject) {
         this.jsonObject = jsonObject;
@@ -34,9 +39,33 @@ public class MsgDecoder implements Runnable {
             roomJoinUnSuccess();
         } else if (func.equals("room_join_not_found")) {
             roomJoinNotFound();
+        } else if (func.equals("receive_message")) {
+            msgReceive();
+        } else if (func.equals("delete_message")) {
+            msgDelete();
+        } else if (func.equals("msg_sent_count")) {
+            msgSentCount();
         }
 
         return null;
+    }
+
+    private void msgSentCount() {
+        String msg = jsonObject.get("message").getAsString();
+        Message message = gson.fromJson(msg, Message.class);
+        chatController.updateSentCount(message);
+    }
+
+    private void msgDelete() {
+        String msg = jsonObject.get("message").getAsString();
+        Message message = gson.fromJson(msg, Message.class);
+        chatController.deleteMessageResponse(message);
+    }
+
+    private void msgReceive() {
+        String msg = jsonObject.get("message").getAsString();
+        Message message = gson.fromJson(msg, Message.class);
+        chatController.addMessage(message);
     }
 
 

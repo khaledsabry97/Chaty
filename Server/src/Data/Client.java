@@ -1,8 +1,13 @@
 package Data;
 
+import Database.DatabaseQuery;
+import Database.DatabaseResultDecoder;
+
 import java.util.HashMap;
 
 public class Client {
+    DatabaseResultDecoder databaseResultDecoder = new DatabaseResultDecoder();
+    DatabaseQuery databaseQuery = new DatabaseQuery();
     private static Client ourInstance = new Client();
 
     HashMap<String,Long> clients = new HashMap<>();
@@ -31,6 +36,7 @@ public class Client {
 
     public void deleteConnection(String ip)
     {
+        Boolean result = databaseResultDecoder.getInUpDl(databaseQuery.deleteConnection(ip));
         clients.remove(ip);
     }
 
@@ -42,7 +48,7 @@ public class Client {
             Long time = clients.get(keys[i].toString());
             long diff = System.currentTimeMillis() - time;
             if(diff > 10000)
-                clients.remove(keys[i].toString());
+                deleteConnection(keys[i].toString());
 
         }
     }

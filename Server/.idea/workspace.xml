@@ -1,7 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="774faf4c-82ff-4f71-bcf4-34dd6585b370" name="Default" comment="" />
+    <list default="true" id="774faf4c-82ff-4f71-bcf4-34dd6585b370" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../Client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/androidTest/java/com/example/socketserver/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/java/com/example/socketserver/Controllers/ActionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/java/com/example/socketserver/Controllers/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/java/com/example/socketserver/DrawingFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/java/com/example/socketserver/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/java/com/example/socketserver/ServerConnections/Reciever.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/java/com/example/socketserver/ServerConnections/Sender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/java/com/example/socketserver/ServerConnections/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/java/com/example/socketserver/UpdateConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/background3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/blue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/ic_refresh_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/ic_search_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/ic_share_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/red6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/torrent_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_____p_full_hd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable__d_glass_symbol.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable__d_sign.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable__d_television.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable__k_fullhd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_award_symbol.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_big_film_roll.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_big_play_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_cinema_light_source.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_director_chair.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_dslr_camera.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_dvd_box.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_dvd_logo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_film_reel_countdown_number__.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_film_reel_playing.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_film_strip.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_flat_tv.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_hd_dvd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_hd_sign.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_hd_video.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_hollywood_star.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_home_theater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_loud_speaker_facing_right.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_loud_woofer_box.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_movie_award.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_movie_clapper_open.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_movie_microphone.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_movie_projector_front_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_movie_theatre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_papper_cup_with_straw.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_parental_guidance_sign.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_parental_guidance_sign__.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_people_watching_a_movie.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_plus____movie.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_popcorn_box.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_proffesional_video_camera.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_projector_with_plug.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_red_carpet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_sad_mask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_satellite_tv_dish.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_small_carnival_mask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_smile_mask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_star_movie_award.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_stripped_ice_cream_cone.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_studio_mic.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_theatre_pillar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_theatre_screen.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_theatre_seats.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/drawable/vector_drawable_two_movie_tickets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/font/a.TTF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/font/carterone.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/font/lifecraft.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/font/majalla.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/font/majallab.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/font/velocista.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/layout/fragment_drawing.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/layout/fragment_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/menu/main_bar_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/menu/main_navigation_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/menu/tool_bar_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/test/java/com/example/socketserver/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Data/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Data/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Data/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Fragments/CreateRoomFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Fragments/CreateRoomFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Functions/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Functions/Functions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Processing/MsgDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Processing/MsgDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Processing/MsgEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/Processing/MsgEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/UpdateConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/UpdateConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/items/HistoryItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/java/com/example/khaledsabry/Client/items/Torrent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/res/drawable/round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/res/drawable/round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/res/layout/fragment_create_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/res/layout/fragment_create_room.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientApp/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientApp/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/DatabaseQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DatabaseQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Processing/MsgDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Processing/MsgDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Processing/MsgEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Processing/MsgEncoder.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -10,12 +148,57 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-344362021">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Sender.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Connections/Sender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
+            <state relative-caret-position="173">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Data/Message.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#256#257#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Data/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
               <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -24,62 +207,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Data/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="843" selection-start-line="843" selection-end-line="843" />
-              <folding>
-                <element signature="e#17393#17394#0" expanded="true" />
-                <element signature="e#17459#17460#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DatabaseQuery.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Database/DatabaseQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="61" column="33" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonObject.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Computer/Downloads/gson-2.8.2.jar!/com/google/gson/JsonObject.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1045">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
-              <folding>
-                <element signature="e#2235#2236#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reciever.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Connections/Reciever.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="173">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Database/DatabaseConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
             </state>
           </provider>
         </entry>
@@ -87,15 +231,18 @@
       <file leaf-file-name="MsgDecoder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Processing/MsgDecoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="192">
+              <caret line="159" selection-start-line="159" selection-end-line="159" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#sendMessage#0;class#MsgDecoder#0" />
-                <element signature="method#deleteMessage#0;class#MsgDecoder#0" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Server.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
@@ -110,8 +257,8 @@
       <file leaf-file-name="ConnectedIps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Processing/ConnectedIps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="342">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -119,8 +266,8 @@
       <file leaf-file-name="MsgEncoder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Processing/MsgEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+            <state relative-caret-position="301">
+              <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,6 +285,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -151,15 +301,15 @@
         <option value="$PROJECT_DIR$/src/MsgEncoder.java" />
         <option value="$PROJECT_DIR$/src/MsgDecoder.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Database/DatabaseQuery.java" />
         <option value="$PROJECT_DIR$/src/Connections/Reciever.java" />
-        <option value="$PROJECT_DIR$/src/Data/Client.java" />
         <option value="$PROJECT_DIR$/src/Processing/ConnectedIps.java" />
         <option value="$PROJECT_DIR$/src/Database/DatabaseConnection.java" />
         <option value="$PROJECT_DIR$/src/Connections/Sender.java" />
-        <option value="$PROJECT_DIR$/src/Processing/MsgEncoder.java" />
-        <option value="$PROJECT_DIR$/src/Processing/MsgDecoder.java" />
         <option value="$PROJECT_DIR$/src/Data/Message.java" />
+        <option value="$PROJECT_DIR$/src/Processing/MsgEncoder.java" />
+        <option value="$PROJECT_DIR$/src/Data/Client.java" />
+        <option value="$PROJECT_DIR$/src/Database/DatabaseQuery.java" />
+        <option value="$PROJECT_DIR$/src/Processing/MsgDecoder.java" />
       </list>
     </option>
   </component>
@@ -168,11 +318,15 @@
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,9 +371,47 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Server" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Server" type="e9137016:NonAndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Server" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Server" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Server" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Server" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+              <item name="Connections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Server" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Server" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Server" type="e9137016:NonAndroidModuleNode" />
+              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+              <item name="Processing" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,7 +419,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="last_opened_file_path" value="D:/Computer/Downloads/gson-2.8.2.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -236,6 +428,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\Explainity\Server\src\Data" />
       <recent name="E:\Projects\Explainity\Server\src\Connections" />
     </key>
   </component>
@@ -259,21 +452,6 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -293,35 +471,48 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32565445" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3253638" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32984293" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32984293" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2439825" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32984293" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25164112" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928064" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40209424" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Sequence" order="7" />
+      <window_info id="simpleUML" order="2" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32928064" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="AdbCommander" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Android WiFi ADB" order="3" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -329,21 +520,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Processing/MsgDecoder.java</url>
-          <line>77</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Connections/Sender.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="44" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -363,10 +540,63 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/Connections/Sender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        <state relative-caret-position="551">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16017">
+          <caret line="843" selection-start-line="843" selection-end-line="843" />
+          <folding>
+            <element signature="e#17393#17394#0" expanded="true" />
+            <element signature="e#17459#17460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" column="33" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Computer/Downloads/gson-2.8.2.jar!/com/google/gson/JsonObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="e#2235#2236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Connections/Reciever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Processing/MsgDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -374,238 +604,39 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecieveThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/OnDatabaseReceived.java" />
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16017">
-          <caret line="843" selection-start-line="843" selection-end-line="843" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SenderThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecieveThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/OnDatabaseReceived.java" />
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16017">
-          <caret line="843" selection-start-line="843" selection-end-line="843" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SenderThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecieveThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16017">
-          <caret line="843" selection-start-line="843" selection-end-line="843" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SenderThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/Processing/ConnectedIps.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Processing/MsgEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Data/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16017">
-          <caret line="843" selection-start-line="843" selection-end-line="843" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SenderThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecieveThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/OnDatabaseReceived.java" />
     <entry file="file://$PROJECT_DIR$/src/Connections/Receiver.java" />
-    <entry file="file://$PROJECT_DIR$/src/SenderThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SenderThread.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5985">
@@ -634,30 +665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Database/DatabaseResultDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,6 +676,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RecieveThread.java" />
+    <entry file="file://$PROJECT_DIR$/src/Action.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14953">
+          <caret line="843" selection-start-line="843" selection-end-line="843" />
+          <folding>
+            <element signature="e#17393#17394#0" expanded="true" />
+            <element signature="e#17459#17460#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -678,46 +702,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Processing/MsgEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Processing/ConnectedIps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecieveThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Connections/Reciever.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
+        <state relative-caret-position="399">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -727,6 +714,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#256#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Processing/MsgEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -734,55 +744,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
+    <entry file="file://$PROJECT_DIR$/src/Connections/Sender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="843" selection-start-line="843" selection-end-line="843" />
+        <state relative-caret-position="173">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <element signature="e#17393#17394#0" expanded="true" />
-            <element signature="e#17459#17460#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/DatabaseQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Processing/MsgDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="192">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#sendMessage#0;class#MsgDecoder#0" />
-            <element signature="method#deleteMessage#0;class#MsgDecoder#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action.java">
+    <entry file="file://$PROJECT_DIR$/src/Processing/ConnectedIps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="342">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Connections/Sender.java">
+    <entry file="file://$PROJECT_DIR$/src/Data/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
+        <state relative-caret-position="453">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

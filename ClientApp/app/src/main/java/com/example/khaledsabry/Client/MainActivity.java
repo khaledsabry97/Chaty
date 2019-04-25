@@ -27,9 +27,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        UpdateConnection updateConnection = new UpdateConnection();
+
         Reciever reciever = new Reciever(5000);
-        new Thread(updateConnection).start();
         reciever.execute();
 
         if (savedInstanceState == null)

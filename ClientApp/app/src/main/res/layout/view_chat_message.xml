@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_margin="@dimen/_2sdp"
+    app:cardBackgroundColor="@color/gray"
+    android:layoutDirection="ltr"
+    app:cardCornerRadius="@dimen/_4sdp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp">
+        <TextView
+            android:id="@+id/nick_name"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="khaled sabry"
+            style="@style/TextMessageHeaders"
+
+            app:layout_constraintBottom_toTopOf="@+id/message"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="أحسن حاجة حصلت إن الموضوع متكررش تاني زي ما كنت فاكر
+الحمد لله المشكلة إتحلت"
+            style="@style/TextMessageContent"
+            app:layout_constraintTop_toBottomOf="@id/nick_name"
+
+            />
+
+        <TextView
+            android:id="@+id/time"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11 mar 2019: 11:15pm"
+style="@style/TextMessageHeaders"
+            app:layout_constraintTop_toBottomOf="@+id/message" />
+
+        <TextView
+            android:id="@+id/sent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Sent 17"
+            style="@style/TextMessageHeaders"
+
+            app:layout_constraintLeft_toRightOf="@+id/time"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

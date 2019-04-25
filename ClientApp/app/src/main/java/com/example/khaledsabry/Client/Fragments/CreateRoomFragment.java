@@ -8,15 +8,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
+import com.example.khaledsabry.Client.Controllers.ChatController;
 import com.example.khaledsabry.Client.Controllers.SignInUpControlller;
+import com.example.khaledsabry.Client.Data.Data;
 import com.example.khaledsabry.Client.Functions.Toasts;
+import com.example.khaledsabry.Client.MainActivity;
 import com.example.khaledsabry.Client.R;
 
 
 public class CreateRoomFragment extends Fragment {
     EditText nickName,roomName,password;
     Button create,join;
+    Data data;
+    ImageView aboutUs,info;
 
     SignInUpControlller signInUpControlller;
 
@@ -41,6 +47,8 @@ public class CreateRoomFragment extends Fragment {
         nickName = view.findViewById(R.id.nick_name);
         roomName = view.findViewById(R.id.room_name);
         password = view.findViewById(R.id.password);
+        aboutUs = view.findViewById(R.id.about_us);
+        info = view.findViewById(R.id.info);
 
         join = view.findViewById(R.id.join_room);
         create = view.findViewById(R.id.create_room);
@@ -58,10 +66,32 @@ public class CreateRoomFragment extends Fragment {
                 create();
             }
         });
-
+        aboutUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                aboutUs();
+            }
+        });
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                info();
+            }
+        });
         signInUpControlller = SignInUpControlller.getInstance();
+        data = Data.getInstance();
         signInUpControlller.setCreateRoomFragment(this);
         return view;
+    }
+
+    private void info() {
+        MainActivity.loadFragmentWithReturn(R.id.main_container, InfoFragment.newInstance());
+
+    }
+
+    private void aboutUs() {
+        MainActivity.loadFragmentWithReturn(R.id.main_container, AboutMeFragment.newInstance());
+
     }
 
     void join()
@@ -98,11 +128,19 @@ public class CreateRoomFragment extends Fragment {
     {
         //load chat fragment
         Toasts.success("Room Created Successfully");
+        data.setNickName(nickName.getText().toString());
+        data.setRoomId(roomId);
+        data.setRoomName(roomName.getText().toString());
+        MainActivity.loadFragmentWithReturn(R.id.main_container, ChatFragment.newInstance());
     }
 
     public void Joined(int roomId)
     {
         Toasts.success("you are joined to the room");
+        data.setNickName(nickName.getText().toString());
+        data.setRoomId(roomId);
+        data.setRoomName(roomName.getText().toString());
+        MainActivity.loadFragmentWithReturn(R.id.main_container, ChatFragment.newInstance());
     }
 
     public void notCreated(String msg)

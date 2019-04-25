@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+
+    tools:context=".Fragments.InfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/round2"
+android:isScrollContainer="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextNormal"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="to create/join room you must fill all the fields "
+
+            android:textAlignment="textStart" />
+
+        <ImageView
+            style="@style/seperatorHorizontal"
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="3dp" />
+
+        <TextView
+            style="@style/TextNormal"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="you can create two rooms with the same name but different password"
+
+            android:textAlignment="textStart" />
+
+        <ImageView
+            style="@style/seperatorHorizontal"
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="3dp" />
+
+        <TextView
+            style="@style/TextNormal"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="you can exit the room conversation by log out at the top left of thr room"
+
+            android:textAlignment="textStart" />
+
+        <ImageView
+            style="@style/seperatorHorizontal"
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="3dp" />
+
+        <TextView
+            style="@style/TextNormal"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="you can exit the room conversation by pressing the back button"
+
+            android:textAlignment="textStart" />
+
+        <ImageView
+            style="@style/seperatorHorizontal"
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="3dp" />
+
+        <TextView
+            style="@style/TextNormal"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="you can clear the messages that you sent and received by long press on the count at the top/right of the room"
+
+            android:textAlignment="textStart" />
+
+        <ImageView
+            style="@style/seperatorHorizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="3dp" />
+
+        <TextView
+            style="@style/TextNormal"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="you can delete your message from your device and other devices by long press on the message"
+
+            android:textAlignment="textStart" />
+
+
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -8,4 +8,7 @@
     <dimen name="size_main_category">@dimen/_10sdp</dimen>
     <dimen name="size_normal_text">@dimen/_8sdp</dimen>
     <dimen name="size_hight_main_title">@dimen/_25sdp</dimen>
+    <dimen name="size_text_message">14dp</dimen>
+    <dimen name="size_text_headers">11dp</dimen>
+
 </resources>

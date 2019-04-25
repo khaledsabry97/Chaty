@@ -12,7 +12,7 @@ public class DatabaseQuery {
     private final String update_connection_time = "update_connection_time";
     private final String check_nick_name_available = "select_connection_nick_name";
     private final String get_all_ip_in_room = "select_all_connections_in_room";
-    private final String delete_connection = "select_all_connections_in_room";
+    private final String delete_connection = "delete_Connection";
 
 
     /**
@@ -99,11 +99,10 @@ public class DatabaseQuery {
 
     }
 
-    public JSONObject deleteConnection(int roomId,String nickName)
+    public JSONObject deleteConnection(String ip)
     {
         Map<String,Object> params = new LinkedHashMap<>();
-        params.put("room_id", roomId);
-        params.put("nick_name", nickName);
+        params.put("ip", ip);
 
         return execute(delete_connection,params);
 

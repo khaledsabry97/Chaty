@@ -40,7 +40,7 @@ public class AboutMeFragment extends Fragment {
                 .addShareAction(R.string.app_name)
                 .setWrapScrollView(true)
                 .setLinksAnimated(true)
-                .setShowAsCard(true)
+                .setShowAsCard(true).setBackgroundColor(R.color.blue_dark)
                 .build();
 
         return view;

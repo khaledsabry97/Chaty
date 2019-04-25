@@ -1,11 +1,14 @@
 package com.example.khaledsabry.Client.Processing;
 
 import com.example.khaledsabry.Client.Connections.Sender;
+import com.example.khaledsabry.Client.Data.Message;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
 public class MsgEncoder {
     Sender sender;
+    Gson gson  = new Gson();
+    JsonObject jsonObject = new JsonObject();
 
     public MsgEncoder()
     {
@@ -52,15 +55,6 @@ public class MsgEncoder {
         send(jsonObject);
     }
 
-    public void roomJoinSuccess(int roomId)
-    {
-        JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("func","room_joined");
-        jsonObject.addProperty("room_id",roomId);
-
-
-        send(jsonObject);
-    }
 
     public void roomJoinUnSuccess()
     {
@@ -82,22 +76,31 @@ public class MsgEncoder {
         send(jsonObject);
     }
 
-    public void sendMsg(String msg)
+    public void sendMsg(Message message,int roomId)
     {
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("func","receive_message");
-        jsonObject.addProperty("msg",msg);
+        jsonObject.addProperty("func","send_message");
+        jsonObject.addProperty("message",gson.toJson(message));
+        jsonObject.addProperty("room_id",roomId);
+
+        send(jsonObject);
+    }
+
+    public void deleteMsg(Message message,int roomId)
+    {
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("func","delete_message");
+        jsonObject.addProperty("message",gson.toJson(message));
+        jsonObject.addProperty("room_id",roomId);
 
 
         send(jsonObject);
     }
 
-    public void deleteMsg(String msg)
+    public void logOut()
     {
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("func","delete_message");
-        jsonObject.addProperty("msg",msg);
-
+        jsonObject.addProperty("func","log_out");
 
         send(jsonObject);
     }

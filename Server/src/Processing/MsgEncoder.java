@@ -1,8 +1,6 @@
 package Processing;
 
 import Connections.Sender;
-import Data.Message;
-import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
 public class MsgEncoder {
@@ -85,7 +83,7 @@ public class MsgEncoder {
     {
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("func","receive_message");
-        jsonObject.addProperty("msg",msg);
+        jsonObject.addProperty("message",msg);
 
 
         send(jsonObject);
@@ -95,7 +93,17 @@ public class MsgEncoder {
     {
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("func","delete_message");
-        jsonObject.addProperty("msg",msg);
+        jsonObject.addProperty("message",msg);
+
+
+        send(jsonObject);
+    }
+
+    public void msgSentCount(String msg)
+    {
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("func","msg_sent_count");
+        jsonObject.addProperty("message",msg);
 
 
         send(jsonObject);

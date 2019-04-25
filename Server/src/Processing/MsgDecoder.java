@@ -1,15 +1,15 @@
 package Processing;
 
+import Data.Message;
 import Database.DatabaseQuery;
 import Database.DatabaseResultDecoder;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import org.json.JSONArray;
-import org.json.JSONObject;
 
-import javax.xml.crypto.Data;
-import Data.Message;
 import Data.Client;
+
+import java.util.ArrayList;
 
 public class MsgDecoder implements Runnable {
     String recieverIp;
@@ -51,11 +51,11 @@ public class MsgDecoder implements Runnable {
             joinRoom();
 
         }
-        else if(func == "send_message")
+        else if(func.equals("send_message"))
         {
             sendMessage();
         }
-        else if(func == "delete_message")
+        else if(func.equals("delete_message"))
         {
             deleteMessage();
         }
@@ -63,7 +63,7 @@ public class MsgDecoder implements Runnable {
         {
             updateConnection();
         }
-        else if(func == "log_out")
+        else if(func.equals("log_out"))
         {
             deleteConnection();
         }
@@ -170,14 +170,30 @@ public class MsgDecoder implements Runnable {
        else
        {
 
+           Client client = Client.getInstance();
+           ArrayList<String> ips = new ArrayList<>();
            for(int i =0 ; i < jsonArray.length();i++)
            {
                String ipCurrent = jsonArray.getJSONObject(i).getString("ip");
-               if(ipCurrent == ip)
+               if(ipCurrent.equals(ip))
                    continue;
+               if(!client.isConnected(ipCurrent))
+                   continue;
+               ips.add(ipCurrent);
+           }
+           int count = ips.size();
+           message.setSent(count);
+           message.setServerTime(String.valueOf(System.currentTimeMillis()));
+           MsgEncoder msgEncoder = new MsgEncoder(ip);
+           msgEncoder.msgSentCount(gson.toJson(message));
+
+           for(int i =0 ; i < count;i++)
+           {
+               String ipCurrent = ips.get(i);
+
                //send the message to that ip
-               MsgEncoder msgEncoder = new MsgEncoder(ipCurrent);
-               msgEncoder.sendMsg(gson.toJson(message));
+               MsgEncoder msgEncoder1 = new MsgEncoder(ipCurrent);
+               msgEncoder1.sendMsg(gson.toJson(message));
            }
        }
 
@@ -199,14 +215,26 @@ public class MsgDecoder implements Runnable {
         else
         {
 
+            Client client = Client.getInstance();
+            ArrayList<String> ips = new ArrayList<>();
             for(int i =0 ; i < jsonArray.length();i++)
             {
                 String ipCurrent = jsonArray.getJSONObject(i).getString("ip");
-                if(ipCurrent == ip)
+                if(ipCurrent.equals(ip))
                     continue;
+                if(!client.isConnected(ipCurrent))
+                    continue;
+                ips.add(ipCurrent);
+            }
+            int count = ips.size();
+
+            for(int i =0 ; i < count;i++)
+            {
+                String ipCurrent = ips.get(i);
+
                 //send the message to that ip
-                MsgEncoder msgEncoder = new MsgEncoder(ipCurrent);
-                msgEncoder.deleteMsg(gson.toJson(message));
+                MsgEncoder msgEncoder1 = new MsgEncoder(ipCurrent);
+                msgEncoder1.deleteMsg(gson.toJson(message));
             }
         }
 
@@ -222,21 +250,10 @@ public class MsgDecoder implements Runnable {
     private void deleteConnection() {
 
         //delete connection from database
-        int roomId = jsonObject.get("room_id").getAsInt();
-        String nickName = jsonObject.get("nick_name").getAsString();
         String ip = recieverIp;
 
         Client client = Client.getInstance();
         client.deleteConnection(ip);
-        Boolean result =databaseResultDecoder.getInUpDl(databaseQuery.deleteConnection(roomId,nickName));
-        if(result == true)
-        {
-            //successfully delete it there is no need to tell the user
-        }
-        else
-        {
-            //unsuccessfull deletion there is no need to tell the user
-        }
 
     }
 }
