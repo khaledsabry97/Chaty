@@ -13,6 +13,9 @@ import java.net.Socket;
 public class Reciever implements Runnable {
     String port;
 
+    /**
+     * @param port listening port
+     */
     public Reciever(String port)
     {
         this.port = port;

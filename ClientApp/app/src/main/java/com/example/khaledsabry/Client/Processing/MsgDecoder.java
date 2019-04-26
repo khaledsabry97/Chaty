@@ -7,6 +7,9 @@ import com.example.khaledsabry.Client.Data.Message;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
+/**
+ * responsible for all the decoding of the messages requests and responses from the server
+ */
 public class MsgDecoder implements Runnable {
     JsonObject jsonObject;
     MsgEncoder msgEncoder;
@@ -24,7 +27,11 @@ public class MsgDecoder implements Runnable {
         decoding(jsonObject.get("func").getAsString());
     }
 
-
+    /**
+     * the decoding function
+     * @param func the function that you want to perform
+     * @return null
+     */
     private Object decoding(String func) {
 
         if (func.equals("room_created")) {
@@ -50,53 +57,79 @@ public class MsgDecoder implements Runnable {
         return null;
     }
 
+    /**
+     * returns how many my message has been sent to
+     */
     private void msgSentCount() {
         String msg = jsonObject.get("message").getAsString();
         Message message = gson.fromJson(msg, Message.class);
         chatController.updateSentCount(message);
     }
 
+    /**
+     * delete a message of another user
+     */
     private void msgDelete() {
         String msg = jsonObject.get("message").getAsString();
         Message message = gson.fromJson(msg, Message.class);
         chatController.deleteMessageResponse(message);
     }
 
+    /**
+     * receive a message from another user
+     */
     private void msgReceive() {
         String msg = jsonObject.get("message").getAsString();
         Message message = gson.fromJson(msg, Message.class);
         chatController.addMessage(message);
     }
 
-
+    /**
+     * room creation was a success
+     */
     private void roomCreatedSuccessfully() {
         Integer roomId = jsonObject.get("room_id").getAsInt();
 
         signInUpControlller.roomCreatedSuccessfully(roomId);
     }
 
+    /**
+     * room creation went bad
+     */
     private void roomCreatedUnSuccessfully() {
         String msg = jsonObject.get("msg").getAsString();
         signInUpControlller.roomCreatedUnSuccessfully(msg);
 
     }
 
+    /**
+     * another room has been found while i sent a request to create one
+     */
     private void roomCreatedFound() {
         String msg = jsonObject.get("msg").getAsString();
         signInUpControlller.roomCreatedFound(msg);
     }
 
+    /**
+     * you now in the room
+     */
     private void roomJoinSuccess() {
         Integer roomId = jsonObject.get("room_id").getAsInt();
 
         signInUpControlller.roomJoinSuccess(roomId);
     }
 
+    /**
+     * something went wrong while you were tring to enter a room
+     */
     private void roomJoinUnSuccess() {
         String msg = jsonObject.get("msg").getAsString();
         signInUpControlller.roomJoinUnSuccess(msg);
     }
 
+    /**
+     * room wasn't found
+     */
     private void roomJoinNotFound() {
         String msg = jsonObject.get("msg").getAsString();
         signInUpControlller.roomJoinNotFound(msg);

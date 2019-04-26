@@ -18,7 +18,7 @@ import com.example.khaledsabry.Client.Data.Data;
 import com.example.khaledsabry.Client.Data.Message;
 import com.example.khaledsabry.Client.MainActivity;
 import com.example.khaledsabry.Client.R;
-import com.example.khaledsabry.Client.UpdateConnection;
+import com.example.khaledsabry.Client.Functions.UpdateConnection;
 
 
 public class ChatFragment extends Fragment {
@@ -68,6 +68,9 @@ public class ChatFragment extends Fragment {
         return view;
     }
 
+    /**
+     * set all the clicks that appears on the view to user
+     */
     private void setInputs() {
         chatController.setChatFragment(this);
 
@@ -99,6 +102,9 @@ messagesRecycler.setFocusable(true);
         });
     }
 
+    /**
+     * send message to others in the room
+     */
     private void send() {
 
         String text = inputMessage.getText().toString();

@@ -13,6 +13,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 
+/**
+ * to receive all the messages from server
+ */
 public class Reciever extends AsyncTask<Void, JsonObject, JsonObject> {
     int port;
 

@@ -14,6 +14,9 @@ import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * if you want to access the connection to the php files
+ */
 public class DatabaseConnection {
     String urlFile;
     Map<String,Object> params;
@@ -30,9 +33,13 @@ public class DatabaseConnection {
         this.params = params;
     }
 
-
+    /**
+     * to connect and returns the result
+     * @return the result from the database
+     */
     public JSONObject execute()
     {
+        //change the path if the path has changed
         String urlString = "http://localhost/explainity/"+urlFile+".php";
 
         JSONObject myResponse = null;

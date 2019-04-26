@@ -5,7 +5,14 @@ import org.json.JSONObject;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * use it if you want to use the database functionality
+ *
+ */
 public class DatabaseQuery {
+    /**
+     * php files
+     */
     private final String create_room = "insert_room";
     private final String join_room = "insert_connection";
     private final String get_room_id = "select_room_name";
@@ -99,6 +106,11 @@ public class DatabaseQuery {
 
     }
 
+    /**
+     * to delete connection from the database
+     * @param ip the ip you want to delete
+     * @return true (delete) - false (not delete)
+     */
     public JSONObject deleteConnection(String ip)
     {
         Map<String,Object> params = new LinkedHashMap<>();

@@ -15,6 +15,9 @@ import com.example.khaledsabry.Client.R;
 
 import java.util.ArrayList;
 
+/**
+ * use it to add the messages to view
+ */
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageViewHolder> {
 
     ArrayList<Message> messages = new ArrayList<>();
@@ -39,6 +42,11 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         count.setText(String.valueOf(messages.size()));
         notifyDataSetChanged();
     }
+
+    /**
+     * to add new message from you or others
+     * @param message the message to add
+     */
     public void addMessage(Message message)
     {
         messages.add(message);
@@ -46,6 +54,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         count.setText(String.valueOf(messages.size()));
     }
 
+    /**
+     * delete message from your view
+     * @param message message to delete
+     */
     public void delteMessage(Message message)
     {
         for(int i = messages.size() -1;i >=0;i--)
@@ -59,6 +71,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
     }
 
+    /**
+     * update the no. of sent of the message
+     * @param message the message to update
+     */
     public void updateMessageSent(Message message)
     {
         for(int i = messages.size() -1;i >=0;i--)
@@ -96,6 +112,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
         }
 
+        /**
+         * update the gui of the chat fragment
+         * @param message
+         */
         private void updateUi(final Message message)
         {
 
@@ -116,6 +136,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
                 messageCard.setForegroundGravity(View.FOCUS_RIGHT);
         }
 
+        /**
+         * delete a message of yours
+         * @param message the message to delete
+         */
         private void deleteMessage(Message message) {
             if(!message.getNickName().equals(data.getNickName()))
                 return;

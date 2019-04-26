@@ -15,11 +15,19 @@ public class Sender implements Runnable {
     String ip;
     String jsonFile;
 
+    /**
+     * the ip to send to
+     * @param ip ip to send to
+     */
     public Sender(String ip)
     {
         this.ip = ip;
     }
 
+    /**
+     * put the message to send
+     * @param jsonFile the message
+     */
     public void putJson(String jsonFile)
     {
         this.jsonFile = jsonFile;

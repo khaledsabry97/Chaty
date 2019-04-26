@@ -1,5 +1,8 @@
 package com.example.khaledsabry.Client.Data;
 
+/**
+ * to save current room name and room id and nickname you are using
+ */
 public class Data {
     private static final Data ourInstance = new Data();
 
@@ -40,6 +43,9 @@ public class Data {
         this.nickName = nickName;
     }
 
+    /**
+     * clear all the data when you log out of the room
+     */
     public void clearData()
     {
         nickName = "";

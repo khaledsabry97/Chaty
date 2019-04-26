@@ -18,11 +18,19 @@ public class ChatController extends Controller {
     ChatFragment chatFragment;
 
 
+    /**
+     * to set current context of the chat fragment
+     * @param chatFragment current chat fragment
+     */
     public void setChatFragment(ChatFragment chatFragment)
     {
         this.chatFragment = chatFragment;
     }
 
+    /**
+     * send message to other and add to yourself your message
+     * @param content
+     */
     public void sendRequest(String content)
     {
         Message message = new Message();
@@ -37,6 +45,9 @@ public class ChatController extends Controller {
 
     }
 
+    /**
+     * log out from channel
+     */
     public void logOut()
     {
         msgEncoder.logOut();
@@ -45,13 +56,20 @@ public class ChatController extends Controller {
 
     }
 
+    /**
+     * delete message of others
+     * @param message message that you must delete
+     */
     public void deleteMessageResponse(Message message)
     {
         chatFragment.deleteMessage(message);
 
     }
 
-
+    /**
+     * when you want to delete one of your messages
+     * @param message the message you want to delete
+     */
     public void deleteMessageRequest(Message message)
     {
         chatFragment.deleteMessage(message);
@@ -59,11 +77,19 @@ public class ChatController extends Controller {
         msgEncoder.deleteMsg(message,data.getRoomId());
     }
 
+    /**
+     * update no. of the sent message to users
+     * @param message the message to update its count
+     */
     public void updateSentCount(Message message)
     {
         chatFragment.updateSentCount(message);
     }
 
+    /**
+     * add message received from others and yours
+     * @param message message to add
+     */
     public void addMessage(Message message)
     {
         chatFragment.addMessage(message);

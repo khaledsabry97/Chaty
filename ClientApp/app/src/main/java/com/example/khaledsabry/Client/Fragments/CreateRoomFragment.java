@@ -84,16 +84,25 @@ public class CreateRoomFragment extends Fragment {
         return view;
     }
 
+    /**
+     * how to use the program
+     */
     private void info() {
         MainActivity.loadFragmentWithReturn(R.id.main_container, InfoFragment.newInstance());
 
     }
 
+    /**
+     * info about us
+     */
     private void aboutUs() {
         MainActivity.loadFragmentWithReturn(R.id.main_container, AboutMeFragment.newInstance());
 
     }
 
+    /**
+     * to join to room
+     */
     void join()
     {
         if(!check())
@@ -101,6 +110,9 @@ public class CreateRoomFragment extends Fragment {
         signInUpControlller.joinRoom(roomName.getText().toString(),password.getText().toString(),nickName.getText().toString());
     }
 
+    /**
+     * to create new room
+     */
     void create()
     {
         if(!check())
@@ -124,6 +136,10 @@ public class CreateRoomFragment extends Fragment {
     }
 
 
+    /**
+     * room created successfully
+     * @param roomId room id
+     */
     public void created(int roomId)
     {
         //load chat fragment
@@ -134,6 +150,10 @@ public class CreateRoomFragment extends Fragment {
         MainActivity.loadFragmentWithReturn(R.id.main_container, ChatFragment.newInstance());
     }
 
+    /**
+     * you have been joined to the room
+     * @param roomId room id
+     */
     public void Joined(int roomId)
     {
         Toasts.success("you are joined to the room");
@@ -143,11 +163,20 @@ public class CreateRoomFragment extends Fragment {
         MainActivity.loadFragmentWithReturn(R.id.main_container, ChatFragment.newInstance());
     }
 
+    /**
+     *
+     * room didn't be created
+     * @param msg the problem
+     */
     public void notCreated(String msg)
     {
         Toasts.error(msg);
     }
 
+    /**
+     * something went wrong when you join
+     * @param msg the problem
+     */
     public void notJoined(String msg)
     {
         Toasts.error(msg);

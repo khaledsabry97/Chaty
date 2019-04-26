@@ -1,3 +1,5 @@
+package Main;
+
 import Connections.Reciever;
 import Database.DatabaseConnection;
 import Database.DatabaseQuery;

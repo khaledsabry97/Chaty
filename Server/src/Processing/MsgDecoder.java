@@ -11,6 +11,9 @@ import Data.Client;
 
 import java.util.ArrayList;
 
+/**
+ * to decode all the messages from the users
+ */
 public class MsgDecoder implements Runnable {
     String recieverIp;
     JsonObject jsonObject;
@@ -18,6 +21,11 @@ public class MsgDecoder implements Runnable {
     DatabaseResultDecoder databaseResultDecoder;
     MsgEncoder msgEncoder;
 
+    /**
+     * make a decoder must have
+     * @param jsonObject the json to decode
+     * @param recieverIp the ip of the sender to receive later
+     */
     public MsgDecoder(JsonObject jsonObject, String recieverIp) {
         this.jsonObject = jsonObject;
         this.recieverIp = recieverIp.substring(1,recieverIp.length());
@@ -40,6 +48,10 @@ public class MsgDecoder implements Runnable {
 
     }
 
+    /**
+     * the decode function
+     * @param func the word we have agreed on between the client and server
+     */
     private void decoding(String func) {
 
         if(func.equals("create_room"))
@@ -71,8 +83,9 @@ public class MsgDecoder implements Runnable {
     }
 
 
-
-
+    /**
+     * to create new room
+     */
     private void createRoom()
     {
         String roomName = jsonObject.get("room_name").getAsString();
@@ -80,10 +93,12 @@ public class MsgDecoder implements Runnable {
         String nickName = jsonObject.get("nick_name").getAsString();
         String ip = recieverIp;
 
+        //insert the room
         Boolean result = databaseResultDecoder.getInUpDl(databaseQuery.createRoom(roomName,roomPassword));
         if(result == true)
         {
             //room has been created successfully
+            //get its id
             JSONArray jsonArray = databaseResultDecoder.getSelect(databaseQuery.getRoomId(roomName,roomPassword));
             if(jsonArray.length() == 0)
             {
@@ -92,7 +107,10 @@ public class MsgDecoder implements Runnable {
             }
             else
             {
+                //get its id
                 int roomId = jsonArray.getJSONObject(0).getInt("id");
+
+                //insert me to the conenction to this room
                 Boolean result2 = databaseResultDecoder.getInUpDl(databaseQuery.joinRoom(roomId,nickName,ip));
                 if(result2 == true)
                 {
@@ -117,6 +135,9 @@ public class MsgDecoder implements Runnable {
     }
 
 
+    /**
+     * to join rome
+     */
     private void joinRoom()
     {
         String roomName = jsonObject.get("room_name").getAsString();
@@ -124,6 +145,7 @@ public class MsgDecoder implements Runnable {
         String nickName = jsonObject.get("nick_name").getAsString();
         String ip = recieverIp;
 
+        //see if the room in the database
         JSONArray jsonArray = databaseResultDecoder.getSelect(databaseQuery.getRoomId(roomName,roomPassword));
         if(jsonArray.length() == 0)
         {
@@ -133,7 +155,9 @@ public class MsgDecoder implements Runnable {
         }
         else
         {
+            //get its id
             int roomId = jsonArray.getJSONObject(0).getInt("id");
+            //insert a connection to it
             Boolean result = databaseResultDecoder.getInUpDl(databaseQuery.joinRoom(roomId,nickName,ip));
             if(result == true)
             {
@@ -153,7 +177,9 @@ public class MsgDecoder implements Runnable {
     }
 
 
-
+    /**
+     * to send to others in the room the message i have wrote
+     */
     private void sendMessage()
     {
         Gson gson = new Gson();
@@ -161,8 +187,8 @@ public class MsgDecoder implements Runnable {
         Message message = gson.fromJson(jsonObject.get("message").getAsString(),Message.class);
         String ip = recieverIp;
 
+        //returns all the ip in the room
        JSONArray jsonArray = databaseResultDecoder.getSelect(databaseQuery.getAllIpInRoom(roomId));
-
        if(jsonArray.length() == 0)
        {
            //something wrong with the query at least i am in the room
@@ -171,7 +197,7 @@ public class MsgDecoder implements Runnable {
        {
 
            Client client = Client.getInstance();
-           ArrayList<String> ips = new ArrayList<>();
+           ArrayList<String> ips = new ArrayList<>(); //array to store only connected ips
            for(int i =0 ; i < jsonArray.length();i++)
            {
                String ipCurrent = jsonArray.getJSONObject(i).getString("ip");
@@ -182,11 +208,12 @@ public class MsgDecoder implements Runnable {
                ips.add(ipCurrent);
            }
            int count = ips.size();
-           message.setSent(count);
+           message.setSent(count); //send to the sender no. of the clients that have listened to the message you have sent
            message.setServerTime(String.valueOf(System.currentTimeMillis()));
            MsgEncoder msgEncoder = new MsgEncoder(ip);
            msgEncoder.msgSentCount(gson.toJson(message));
 
+           //send to all ips the message
            for(int i =0 ; i < count;i++)
            {
                String ipCurrent = ips.get(i);
@@ -199,6 +226,9 @@ public class MsgDecoder implements Runnable {
 
     }
 
+    /**
+     * delete a message from other clients
+     */
     private void deleteMessage()
     {
         Gson gson = new Gson();
@@ -206,8 +236,8 @@ public class MsgDecoder implements Runnable {
         Message message = gson.fromJson(jsonObject.get("message").getAsString(),Message.class);
         String ip = recieverIp;
 
+        //get all ips inside the room
         JSONArray jsonArray = databaseResultDecoder.getSelect(databaseQuery.getAllIpInRoom(roomId));
-
         if(jsonArray.length() == 0)
         {
             //something wrong with the query at least i am in the room
@@ -217,6 +247,7 @@ public class MsgDecoder implements Runnable {
 
             Client client = Client.getInstance();
             ArrayList<String> ips = new ArrayList<>();
+            //get only the connected ips
             for(int i =0 ; i < jsonArray.length();i++)
             {
                 String ipCurrent = jsonArray.getJSONObject(i).getString("ip");
@@ -227,7 +258,7 @@ public class MsgDecoder implements Runnable {
                 ips.add(ipCurrent);
             }
             int count = ips.size();
-
+            //send to them the delete request
             for(int i =0 ; i < count;i++)
             {
                 String ipCurrent = ips.get(i);
@@ -240,6 +271,9 @@ public class MsgDecoder implements Runnable {
 
     }
 
+    /**
+     * to update the connection so the client still be connected
+     */
     private void updateConnection()
     {
         Client client = Client.getInstance();
@@ -247,6 +281,9 @@ public class MsgDecoder implements Runnable {
     }
 
 
+    /**
+     * delete a connection from the database and server
+     */
     private void deleteConnection() {
 
         //delete connection from database

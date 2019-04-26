@@ -2,6 +2,9 @@ package Processing;
 
 import Data.Client;
 
+/**
+ * to make constant check if there is a user diconnected from a server
+ */
 public class ConnectedIps implements Runnable {
     @Override
     public void run() {
@@ -10,8 +13,8 @@ public class ConnectedIps implements Runnable {
         {
             try
             {
-                client.deleteNotConencted();
-                Thread.sleep(2000);
+                client.deleteNotConencted(); //delete all who not conencted
+                Thread.sleep(2000); // sleep the thread for 2 sec
             }
             catch (Exception e)
             {

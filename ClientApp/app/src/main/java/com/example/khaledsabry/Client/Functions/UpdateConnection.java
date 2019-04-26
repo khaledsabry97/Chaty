@@ -1,4 +1,4 @@
-package com.example.khaledsabry.Client;
+package com.example.khaledsabry.Client.Functions;
 
 
 import com.example.khaledsabry.Client.Processing.MsgEncoder;

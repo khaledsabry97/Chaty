@@ -3,6 +3,9 @@ package com.example.khaledsabry.Client.Data;
 import java.util.ArrayList;
 import java.util.Random;
 
+/*
+store the ip and ports of the server
+ */
 public class Server {
     static Server instance = null;
 

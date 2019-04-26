@@ -2,6 +2,9 @@ package com.example.khaledsabry.Client.Data;
 
 import java.io.Serializable;
 
+/**
+ * the message class that represents the message you send and receive
+ */
 public class Message implements Serializable {
     String nickName;
     String content;

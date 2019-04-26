@@ -12,6 +12,9 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 
+/**
+ * to send a message to the server
+ */
 public class Sender implements Runnable {
 
     String port;
@@ -25,6 +28,10 @@ public class Sender implements Runnable {
 
     }
 
+    /**
+     * to put the message in the socket
+     * @param jsonFile the message to be sent
+     */
     public void putJson(String jsonFile)
     {
         this.jsonFile = jsonFile;
