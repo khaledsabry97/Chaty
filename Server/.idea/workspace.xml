@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="774faf4c-82ff-4f71-bcf4-34dd6585b370" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connections/Reciever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connections/Reciever.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connections/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connections/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/DatabaseQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DatabaseQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/DatabaseResultDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DatabaseResultDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Processing/ConnectedIps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Processing/ConnectedIps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Processing/MsgDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Processing/MsgDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Processing/MsgEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Processing/MsgEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Documentation.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Project Documentation.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project Idea Proposal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Project Idea Proposal.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~$oject Documentation.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~$oject Idea Proposal.docx" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -206,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
@@ -380,7 +372,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1087" extended-state="1" />
+    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
