@@ -28,7 +28,7 @@ public class AboutMeFragment extends Fragment {
                 .setName("Khaled Sabry Ibrahim")
                 .setSubTitle("Computer Engineer")
                 .setBrief("reach me if you want to get sea of ideas :)")
-                .setAppIcon(R.drawable.app_image)
+                .setAppIcon(R.drawable.chaty)
                 .setAppName(R.string.app_name)
                 .addGooglePlayStoreLink("8002078663318221363")
                 .addGitHubLink("khaledsabry97")

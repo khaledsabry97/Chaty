@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/poster_loading_image"
+    android:background="@drawable/blue"
     app:chainUseRtl="false"
     tools:context=".Fragments.CreateRoomFragment">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
             android:id="@+id/banner"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/blue"
-            app:layout_constraintTop_toTopOf="parent"
-           />
+            android:layout_height="112dp"
+            android:background="@drawable/ch"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <RelativeLayout
             android:id="@+id/main_container"

@@ -133,7 +133,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
             content.setText(message.getContent());
 
             if(message.getNickName().equals(data.getNickName()))
-                messageCard.setForegroundGravity(View.FOCUS_RIGHT);
+                messageCard.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
         }
 
         /**

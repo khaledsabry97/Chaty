@@ -15,17 +15,6 @@
     <color name="red_dark">#390405</color>
 
 
-<drawable name="app_image">@drawable/pikachu</drawable>
-    <drawable name="MainBackground">@drawable/background3</drawable>
-    <drawable name="ContentTitle">@drawable/red6</drawable>
-    <drawable name="poster_loading_image">@drawable/blue</drawable>
-    <drawable name="bottom_navigation_background">@color/red</drawable>
-    <drawable name="history_toolbar_options">@drawable/blue</drawable>
-    <drawable name="history_title">@drawable/red6</drawable>
-    <drawable name="torrent_item">@drawable/blue</drawable>
-    <drawable name="navigation_poster_image">@drawable/pikachu</drawable>
-    <drawable name="navigation_backdrop_image">@drawable/torrent_item</drawable>
-
 
 
     <drawable name="toolbar_color">@color/blue_dark</drawable>

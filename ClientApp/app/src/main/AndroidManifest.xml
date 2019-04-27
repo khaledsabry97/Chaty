@@ -7,10 +7,9 @@
     <application
 
         android:allowBackup="true"
-        android:icon="@drawable/pikachu"
+        android:icon="@drawable/chaty"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/pikachu"
-        android:supportsRtl="true"
+        android:roundIcon="@drawable/chaty"
         android:theme="@style/AppTheme"
         >
         <meta-data
