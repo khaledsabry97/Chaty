@@ -3,8 +3,10 @@ package com.example.khaledsabry.Client.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.LayoutDirection;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,7 +61,7 @@ public class ChatFragment extends Fragment {
         messagesRecycler = view.findViewById(R.id.chat_recycler);
         data = Data.getInstance();
         chatController = ChatController.getInstance();
-        messageAdapter = new MessageAdapter(messageNo);
+        messageAdapter = new MessageAdapter(messageNo,messagesRecycler);
         updateConnection = new UpdateConnection();
         updateConnectionThread = new Thread(updateConnection);
         updateConnectionThread.start();
@@ -72,6 +74,9 @@ public class ChatFragment extends Fragment {
      * set all the clicks that appears on the view to user
      */
     private void setInputs() {
+        if(data.getRoomName().equals(""))
+            MainActivity.loadFragmentNoReturn(R.id.main_container, CreateRoomFragment.newInstance());
+
         chatController.setChatFragment(this);
 
         logOut.setOnClickListener(new View.OnClickListener() {
@@ -91,15 +96,17 @@ public class ChatFragment extends Fragment {
         roomName.setText(data.getRoomName());
 
         messagesRecycler.setAdapter(messageAdapter);
-        messagesRecycler.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
-messagesRecycler.setFocusable(true);
-        messageNo.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                messageAdapter.clear();
-                return false;
-            }
-        });
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        //layoutManager.setStackFromEnd(true);
+        //layoutManager.setReverseLayout(true);
+        messagesRecycler.setLayoutManager(layoutManager);
+                messageNo.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        messageAdapter.clear();
+                        return false;
+                    }
+                });
     }
 
     /**

@@ -4,10 +4,8 @@
     android:id="@+id/message_card"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_gravity="right"
     android:layout_margin="@dimen/_2sdp"
     app:cardBackgroundColor="@color/gray"
-    android:layoutDirection="ltr"
     app:cardCornerRadius="@dimen/_4sdp">
 
     <android.support.constraint.ConstraintLayout

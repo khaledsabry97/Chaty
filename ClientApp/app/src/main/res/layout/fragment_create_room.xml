@@ -5,26 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/blue"
-    app:chainUseRtl="false"
     tools:context=".Fragments.CreateRoomFragment">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
+        <TextView
             android:id="@+id/banner"
             android:layout_width="match_parent"
-            android:layout_height="112dp"
-            android:background="@drawable/ch"
+            android:layout_height="@dimen/_30sdp"
+            android:text="CHATY"
+            android:gravity="center"
+            style="@style/TextHeader"
+            android:background="@drawable/blue"
             app:layout_constraintTop_toTopOf="parent" />
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            app:layout_constraintTop_toBottomOf="@id/banner"
+            android:background="#2D4743"></ImageView>
         <RelativeLayout
             android:id="@+id/main_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_5sdp"
+
             app:layout_constraintTop_toBottomOf="@id/banner">
 
             <LinearLayout

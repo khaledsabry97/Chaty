@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="@dimen/_21sdp"
+    android:layout_height="@dimen/_27sdp"
     android:layout_width="match_parent"
     android:background="@drawable/round2"
     android:paddingTop="@dimen/_1sdp"
     android:paddingBottom="@dimen/_1sdp"
     android:paddingRight="@dimen/_1sdp"
     android:paddingLeft="@dimen/_1sdp"
+    android:gravity="center"
 
 
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -14,7 +15,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:foregroundGravity="center"
     android:background="@drawable/blue"
 
 
@@ -38,8 +40,9 @@
         android:layout_width="@dimen/_1sdp"
         android:layout_height="0dp"
         android:layout_margin="3dp"
+        android:foregroundGravity="center"
         android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="@id/log_out"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/room_name"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/log_out"/>
@@ -75,7 +78,7 @@
         android:layout_height="0dp"
         android:background="@color/white"
         android:layout_margin="3dp"
-        app:layout_constraintBottom_toBottomOf="@id/log_out"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/room_name"
         app:layout_constraintRight_toLeftOf="@+id/count"
         app:layout_constraintTop_toTopOf="parent" />

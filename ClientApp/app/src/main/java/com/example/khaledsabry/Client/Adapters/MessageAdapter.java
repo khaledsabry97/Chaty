@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.khaledsabry.Client.Controllers.ChatController;
@@ -13,7 +14,9 @@ import com.example.khaledsabry.Client.Data.Data;
 import com.example.khaledsabry.Client.Data.Message;
 import com.example.khaledsabry.Client.R;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * use it to add the messages to view
@@ -24,15 +27,16 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     ChatController chatController = ChatController.getInstance();
     Data data = Data.getInstance();
     TextView count;
-
-    public MessageAdapter(TextView count)
+    RecyclerView recyclerView;
+    public MessageAdapter(TextView count,RecyclerView recyclerView)
     {
         this.count = count;
+        this.recyclerView = recyclerView;
     }
     @NonNull
     @Override
     public MessageViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_chat_message,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_sided_chat,parent,false);
         return new MessageViewHolder(view);
     }
 
@@ -52,6 +56,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         messages.add(message);
         notifyItemInserted(messages.size());
         count.setText(String.valueOf(messages.size()));
+
+recyclerView.scrollToPosition(messages.size()-1);
     }
 
     /**
@@ -101,15 +107,22 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     class MessageViewHolder extends RecyclerView.ViewHolder{
         CardView messageCard;
         TextView sent,content,time,nickName;
+        View view;
+        LinearLayout left,right;
 
         public MessageViewHolder(View itemView) {
             super(itemView);
-            messageCard = itemView.findViewById(R.id.message_card);
-            sent = itemView.findViewById(R.id.sent);
-            content = itemView.findViewById(R.id.message);
-            time = itemView.findViewById(R.id.time);
-            nickName = itemView.findViewById(R.id.nick_name);
+            left = itemView.findViewById(R.id.chat_left_msg_layout);
+            right =itemView.findViewById(R.id.chat_right_msg_layout);
 
+        }
+
+        private void bind(View view)
+        {
+            sent = view.findViewById(R.id.sent);
+            content = view.findViewById(R.id.message);
+            time = view.findViewById(R.id.time);
+            nickName = view.findViewById(R.id.nick_name);
         }
 
         /**
@@ -118,8 +131,22 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
          */
         private void updateUi(final Message message)
         {
+            if(message.getNickName().equals(data.getNickName()))
+            {
+                left.setVisibility(View.GONE);
+                right.setVisibility(View.VISIBLE);
 
-            messageCard.setOnLongClickListener(new View.OnLongClickListener() {
+                view = right;
+            }
+            else
+            {
+                right.setVisibility(View.GONE);
+                left.setVisibility(View.VISIBLE);
+
+                view = left;
+            }
+            bind(view);
+            view.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View v) {
                     deleteMessage(message);
@@ -128,12 +155,15 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
             });
 
             nickName.setText(message.getNickName());
-            time.setText(message.getServerTime());
+            long k = Long.valueOf(message.getServerTime());
+            Date date = new java.util.Date(k);
+            SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
+            String formattedDate = sdf.format(date);
+            time.setText(formattedDate.substring(0,19));
             sent.setText("Sent : "+String.valueOf(message.getSent()));
             content.setText(message.getContent());
 
-            if(message.getNickName().equals(data.getNickName()))
-                messageCard.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+
         }
 
         /**

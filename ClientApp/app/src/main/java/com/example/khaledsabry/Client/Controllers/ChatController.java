@@ -38,6 +38,7 @@ public class ChatController extends Controller {
         message.setContent(content);
         message.setNickName(data.getNickName());
         message.setLocalTime(String.valueOf(System.currentTimeMillis()));
+        message.setServerTime(String.valueOf(System.currentTimeMillis()));
 
         chatFragment.addMessage(message);
         //then send it to the server
