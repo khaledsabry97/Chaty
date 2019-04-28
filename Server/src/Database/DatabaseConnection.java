@@ -40,7 +40,7 @@ public class DatabaseConnection {
     public JSONObject execute()
     {
         //change the path if the path has changed
-        String urlString = "http://localhost/explainity/"+urlFile+".php";
+        String urlString = "http://localhost/chaty/"+urlFile+".php";
 
         JSONObject myResponse = null;
         try{
