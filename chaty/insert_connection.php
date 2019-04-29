@@ -8,7 +8,7 @@ $nick_name = $_POST["nick_name"];
 $ip = $_POST["ip"];
 $last_time_entered = $_POST["last_time_entered"];
 
-$sql = "INSERT into explainity.connections(room_id,nick_name,ip,last_time_entered) VALUES($room_id,\"$nick_name\",\"$ip\",$last_time_entered)";
+$sql = "INSERT into connections(room_id,nick_name,ip,last_time_entered) VALUES($room_id,\"$nick_name\",\"$ip\",$last_time_entered)";
 
 if(mysqli_query($conn ,$sql))
   	echo json_encode(array("server_response"=>true));

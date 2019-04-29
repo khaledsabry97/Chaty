@@ -6,7 +6,7 @@ require('connection.php');
 $room_name = $_POST["room_name"];
 $password = $_POST["password"];
 
-$sql = "insert into explainity.rooms(room_name,password) VALUES(\"$room_name\",\"$password\")";
+$sql = "insert into rooms(room_name,password) VALUES(\"$room_name\",\"$password\")";
 
 if(mysqli_query($conn ,$sql))
   	echo json_encode(array("server_response"=>true));

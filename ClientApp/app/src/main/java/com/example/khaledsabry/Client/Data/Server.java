@@ -10,7 +10,7 @@ public class Server {
     static Server instance = null;
 
     private String RecievePort= "";
-    private String ServerIp = "192.168.0.102";
+    private String ServerIp = "192.168.0.103";
     private ArrayList<Integer> ServerPorts = new ArrayList<>();
 
     public String getRecievePort() {
