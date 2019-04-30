@@ -27,8 +27,7 @@ As I hope to call the app the “big S”
 - send and receive messages and know how many clients received this message.
 - delete your messages from your side and others side.
 - clear all the history of your room on your side.
-- live functionality provides to you the ability to show only messages to the
-connected people in the room right at this moment only.
+- live functionality provides to you the ability to show only messages to the connected people in the room right at this moment only.
 - show count of how many messages you have sent and received.
 - log out so you don’t receive messages any more from this room.
 - more about us button to know other apps we provide and connections to us.
@@ -42,4 +41,4 @@ connected people in the room right at this moment only.
 5) open the android app code and change in Data module the Server class, the Server ip to current connected ip to your device.
 6) run the android app on any physical android phone/tablet.
 
-## [Documentation](https://github.com/khaledsabry97/Chaty/blob/master/Project%20Documentation.pdf)
+## [Full Documentation](https://github.com/khaledsabry97/Chaty/blob/master/Project%20Documentation.pdf)
