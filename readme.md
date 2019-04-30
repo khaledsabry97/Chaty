@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://github.com/khaledsabry97/Chaty/blob/master/Chaty2.png">
+</p>
+
+
 # Chaty
 The app has been built on the idea of the IRC service, that you can chat with group of people just using the relay you send and the server relay to any one with you in the room.
 As I hope to call the app the “big S”
@@ -17,7 +22,6 @@ As I hope to call the app the “big S”
   much complicated stuff and also gives you the ability to add more stuff and
   functionality to the app easily as the project structure built essentially on that.
   
-
 
 ## Features
 - create a room with only your nickname and room name and room password.
@@ -42,3 +46,7 @@ As I hope to call the app the “big S”
 6) run the android app on any physical android phone/tablet.
 
 ## [Full Documentation](https://github.com/khaledsabry97/Chaty/blob/master/Project%20Documentation.pdf)
+
+<p align="center">
+  <img src="https://github.com/khaledsabry97/Chaty/blob/master/Chaty1.jpg">
+</p>
