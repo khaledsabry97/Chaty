@@ -50,3 +50,11 @@ As I hope to call the app the “big S”
 <p align="center">
   <img src="https://github.com/khaledsabry97/Chaty/blob/master/Chaty1.jpg">
 </p>
+
+
+
+## Sample Pictures
+
+<img src="https://github.com/khaledsabry97/Chaty/blob/master/Sample%20Pictures/Screenshot_2019-04-28-00-04-02.png" width="260" height="400" /> <img src="https://github.com/khaledsabry97/Chaty/blob/master/Sample%20Pictures/Screenshot_2019-04-28-00-09-43.png" width="260" height="400" /> <img src="https://github.com/khaledsabry97/Chaty/blob/master/Sample%20Pictures/Screenshot_2019-04-28-00-12-13.png" width="260" height="400" /> <img src="https://github.com/khaledsabry97/Chaty/blob/master/Sample%20Pictures/Screenshot_2019-04-28-00-13-12.png" width="260" height="400" />
+
+ <img src="https://github.com/khaledsabry97/Chaty/blob/master/Sample%20Pictures/Screenshot_2019-04-28-00-11-51.png" align="center" width="400" height="260" />
