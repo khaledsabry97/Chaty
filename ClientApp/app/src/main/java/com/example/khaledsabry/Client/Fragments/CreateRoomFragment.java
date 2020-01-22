@@ -13,13 +13,14 @@ import android.widget.ImageView;
 import com.example.khaledsabry.Client.Controllers.ChatController;
 import com.example.khaledsabry.Client.Controllers.SignInUpControlller;
 import com.example.khaledsabry.Client.Data.Data;
+import com.example.khaledsabry.Client.Data.Server;
 import com.example.khaledsabry.Client.Functions.Toasts;
 import com.example.khaledsabry.Client.MainActivity;
 import com.example.khaledsabry.Client.R;
 
 
 public class CreateRoomFragment extends Fragment {
-    EditText nickName,roomName,password;
+    EditText nickName,roomName,password,serverIp;
     Button create,join;
     Data data;
     ImageView aboutUs,info;
@@ -49,6 +50,7 @@ public class CreateRoomFragment extends Fragment {
         password = view.findViewById(R.id.password);
         aboutUs = view.findViewById(R.id.about_us);
         info = view.findViewById(R.id.info);
+        serverIp = view.findViewById(R.id.ip);
 
         join = view.findViewById(R.id.join_room);
         create = view.findViewById(R.id.create_room);
@@ -117,7 +119,6 @@ public class CreateRoomFragment extends Fragment {
     {
         if(!check())
             return;
-
         signInUpControlller.createRoom(roomName.getText().toString(),password.getText().toString(),nickName.getText().toString());
 
 
@@ -127,11 +128,14 @@ public class CreateRoomFragment extends Fragment {
 
     boolean check()
     {
-        if(nickName.getText().toString().isEmpty() || roomName.getText().toString().isEmpty() || password.getText().toString().isEmpty())
+        if(nickName.getText().toString().isEmpty() || roomName.getText().toString().isEmpty() || password.getText().toString().isEmpty() || serverIp.getText().toString().isEmpty()
+)
         {
             Toasts.error("please complete all the fields!");
             return false;
         }
+        Server.getInstance().setServerIp(serverIp.getText().toString());
+
         return true;
     }
 

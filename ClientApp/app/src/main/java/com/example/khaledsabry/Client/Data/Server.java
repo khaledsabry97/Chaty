@@ -13,6 +13,10 @@ public class Server {
     private String ServerIp = "192.168.43.15";
     private ArrayList<Integer> ServerPorts = new ArrayList<>();
 
+    public void setServerIp(String serverIp) {
+        ServerIp = serverIp;
+    }
+
     public String getRecievePort() {
         return RecievePort;
     }
